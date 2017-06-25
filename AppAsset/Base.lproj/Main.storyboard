@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WJR-Tj-hHa">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="N51-CP-irR">
+            <objects>
+                <tabBarController id="WJR-Tj-hHa" customClass="TabBarViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="clear" itemPositioning="fill" id="vBu-TG-6VC" customClass="FrostyTabBar" customModule="AppAsset" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ui2-bQ-Jd6" kind="relationship" relationship="viewControllers" id="9se-k5-VZZ"/>
+                        <segue destination="HYh-l9-Jft" kind="relationship" relationship="viewControllers" id="8iB-K5-Bvg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2f-sh-Mep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="-1641"/>
+        </scene>
+        <!--8 Bits-->
+        <scene sceneID="WE4-MB-e8i">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ui2-bQ-Jd6" customClass="RootPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="8 Bits" image="8Bit" selectedImage="8Bit Selected" id="Uzu-rt-79V"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNy-sX-tCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-161" y="-663"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="Bjn-QZ-eCf">
+            <objects>
+                <viewController id="HYh-l9-Jft" customClass="ViewController4" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hff-6I-yYp"/>
+                        <viewControllerLayoutGuide type="bottom" id="igm-xw-y9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a2P-hx-8kI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKW-NV-T5Q">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oKW-NV-T5Q" secondAttribute="trailing" id="2mX-g5-vIQ"/>
+                            <constraint firstAttribute="bottom" secondItem="oKW-NV-T5Q" secondAttribute="bottom" id="5Fe-XX-8mS"/>
+                            <constraint firstItem="oKW-NV-T5Q" firstAttribute="leading" secondItem="a2P-hx-8kI" secondAttribute="leading" id="Dxi-9A-wNE"/>
+                            <constraint firstItem="oKW-NV-T5Q" firstAttribute="top" secondItem="hff-6I-yYp" secondAttribute="bottom" id="j83-e8-kpS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="PeY-rD-zdR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJV-Zc-cn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="-663"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Fluttershy" id="BYZ-38-t0r" customClass="ViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fluttershy Background" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-1k-5fE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.75913709399999996" green="0.41100406649999999" blue="0.53295749429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EJ9-OW-Ihw"/>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jWB-gr-MbC"/>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qTI-Sf-SzX"/>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ylx-NM-lc5"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-874" y="14"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="guP-kZ-tGS">
+            <objects>
+                <viewController storyboardIdentifier="PinkiePie" id="n9P-yj-j1Z" customClass="ViewController2" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z1J-Ju-qUw"/>
+                        <viewControllerLayoutGuide type="bottom" id="q3x-xy-hkY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iII-a2-8jH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkiePie Background" translatesAutoresizingMaskIntoConstraints="NO" id="I9Q-GL-Qcg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.97447222471237183" green="0.69261306524276733" blue="0.69813871383666992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="leading" secondItem="iII-a2-8jH" secondAttribute="leading" id="31X-ih-KZj"/>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="width" secondItem="iII-a2-8jH" secondAttribute="width" id="WrI-C8-rUQ"/>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="height" secondItem="iII-a2-8jH" secondAttribute="height" id="YTC-O6-Yx1"/>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="top" secondItem="z1J-Ju-qUw" secondAttribute="bottom" id="olX-Df-tsz"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCz-yE-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="13"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="rHe-PO-Res">
+            <objects>
+                <viewController storyboardIdentifier="AppleJack" id="N3n-cu-pas" customClass="ViewController3" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yxY-mY-Qhj"/>
+                        <viewControllerLayoutGuide type="bottom" id="4fO-dD-U4r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g1A-Ld-Cfd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppleJack Background" translatesAutoresizingMaskIntoConstraints="NO" id="IXV-M4-Nic">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.77923804521560669" green="0.41344058513641357" blue="0.40892338752746582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="top" secondItem="yxY-mY-Qhj" secondAttribute="bottom" id="04N-0H-L9p"/>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="leading" secondItem="g1A-Ld-Cfd" secondAttribute="leading" id="2AR-Ry-BfA"/>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="width" secondItem="g1A-Ld-Cfd" secondAttribute="width" id="Y57-uW-Hym"/>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="height" secondItem="g1A-Ld-Cfd" secondAttribute="height" id="eRc-Jh-OvV"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDG-lJ-aTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8Bit" width="27" height="24"/>
+        <image name="8Bit Selected" width="27" height="24"/>
+        <image name="AppleJack Background" width="363" height="384"/>
+        <image name="Fluttershy Background" width="640" height="360"/>
+        <image name="PinkiePie Background" width="2000" height="2000"/>
+        <image name="clear" width="1" height="1"/>
+    </resources>
+</document>
