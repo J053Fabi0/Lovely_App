@@ -47,7 +47,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let previousIndex = vcIndex - 1
         
-        guard previousIndex >= 0 else {return viewControllerList[viewControllerList.count - 1]}
+        guard previousIndex >= 1 else {return viewControllerList[viewControllerList.count - 1]}
         
         guard viewControllerList.count > previousIndex else {return nil}
         
@@ -59,7 +59,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let nextIndex = vcIndex + 1
         
-        guard viewControllerList.count != nextIndex else {return viewControllerList[0]}
+        guard viewControllerList.count != nextIndex else {return viewControllerList[1]}
         
         guard viewControllerList.count > nextIndex else {return nil}
         
