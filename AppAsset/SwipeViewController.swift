@@ -1,24 +1,27 @@
 //
-//  ViewController.swift
+//  SwipeViewController.swift
 //  AppAsset
 //
-//  Created by Jose Fabio_ on 23/06/17.
+//  Created by Jose Fabio_ on 25/06/17.
 //  Copyright © 2017 com.yoyomero.josefabio. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SwipeViewController: UIViewController {
+    
+    @IBOutlet var swipeGif: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        swipeGif.loadGif(name: "swipe")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 }
-

@@ -13,6 +13,7 @@
         <scene sceneID="N51-CP-irR">
             <objects>
                 <tabBarController id="WJR-Tj-hHa" customClass="TabBarViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BcK-4c-VgM"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="clear" itemPositioning="fill" id="vBu-TG-6VC" customClass="FrostyTabBar" customModule="AppAsset" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,12 +26,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="ui2-bQ-Jd6" kind="relationship" relationship="viewControllers" id="9se-k5-VZZ"/>
-                        <segue destination="HYh-l9-Jft" kind="relationship" relationship="viewControllers" id="8iB-K5-Bvg"/>
+                        <segue destination="ppO-fs-Z5a" kind="relationship" relationship="viewControllers" id="toU-68-UNz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2f-sh-Mep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-1641"/>
+            <point key="canvasLocation" x="549" y="-1279"/>
         </scene>
         <!--8 Bits-->
         <scene sceneID="WE4-MB-e8i">
@@ -41,37 +42,125 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNy-sX-tCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-161" y="-663"/>
+            <point key="canvasLocation" x="-463" y="-306"/>
         </scene>
-        <!--View Controller4-->
-        <scene sceneID="Bjn-QZ-eCf">
+        <!--Navigation Controller-->
+        <scene sceneID="i5v-PB-vyr">
             <objects>
-                <viewController id="HYh-l9-Jft" customClass="ViewController4" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="ppO-fs-Z5a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="lq5-Eo-hMD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X3c-IQ-hbY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Hm-gR-BLZ" kind="relationship" relationship="rootViewController" id="hAc-BZ-VGZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHE-03-RAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="-306"/>
+        </scene>
+        <!--Color Rojo-->
+        <scene sceneID="P12-Gf-VGd">
+            <objects>
+                <viewController id="1Hm-gR-BLZ" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hff-6I-yYp"/>
-                        <viewControllerLayoutGuide type="bottom" id="igm-xw-y9Z"/>
+                        <viewControllerLayoutGuide type="top" id="bdV-V3-tCj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZON-RE-OFJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="a2P-hx-8kI">
+                    <view key="view" contentMode="scaleToFill" id="3mj-OX-OW0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKW-NV-T5Q">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JZ-1r-25y">
+                                <rect key="frame" x="124" y="247" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lBl-WM-5bE" kind="show" id="mi8-Iw-Cj5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77923804519999995" green="0.41344058509999998" blue="0.40892338750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Color Rojo" id="gaY-zv-AeR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7o-JQ-Vn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811" y="-306"/>
+        </scene>
+        <!--Colo Amarillo-->
+        <scene sceneID="ucN-2p-7ra">
+            <objects>
+                <viewController title="Colo Amarillo" id="lBl-WM-5bE" customClass="ViewController4" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rnn-i9-Adu"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJ8-Dm-cdc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hTX-XD-omj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ohh.gif" translatesAutoresizingMaskIntoConstraints="NO" id="JiU-75-7AP">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.73560682600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="ohhGif" destination="JiU-75-7AP" id="WwM-zS-vHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3J-Sg-AJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623" y="-306"/>
+        </scene>
+        <!--Swipe View Controller-->
+        <scene sceneID="Jcx-z4-ihP">
+            <objects>
+                <viewController storyboardIdentifier="Swipe" id="nAC-cj-a2L" customClass="SwipeViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TOW-HR-da4"/>
+                        <viewControllerLayoutGuide type="bottom" id="cip-Tv-Ukg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vip-iq-xIo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-uu-TiZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.85160446166992188" green="0.82804447412490845" blue="0.79026353359222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desliza el dedo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puc-cY-dGY">
+                                <rect key="frame" x="76.5" y="20" width="168" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="oKW-NV-T5Q" secondAttribute="trailing" id="2mX-g5-vIQ"/>
-                            <constraint firstAttribute="bottom" secondItem="oKW-NV-T5Q" secondAttribute="bottom" id="5Fe-XX-8mS"/>
-                            <constraint firstItem="oKW-NV-T5Q" firstAttribute="leading" secondItem="a2P-hx-8kI" secondAttribute="leading" id="Dxi-9A-wNE"/>
-                            <constraint firstItem="oKW-NV-T5Q" firstAttribute="top" secondItem="hff-6I-yYp" secondAttribute="bottom" id="j83-e8-kpS"/>
+                            <constraint firstItem="Puc-cY-dGY" firstAttribute="centerX" secondItem="vip-iq-xIo" secondAttribute="centerX" id="G5y-WQ-xWN"/>
+                            <constraint firstItem="Puc-cY-dGY" firstAttribute="top" secondItem="TOW-HR-da4" secondAttribute="bottom" constant="20" id="JEz-2c-bp4"/>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="leading" secondItem="vip-iq-xIo" secondAttribute="leading" id="OUu-52-vDT"/>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="width" secondItem="vip-iq-xIo" secondAttribute="width" id="eNb-wr-abB"/>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="height" secondItem="vip-iq-xIo" secondAttribute="height" id="eqm-c6-9U9"/>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="top" secondItem="TOW-HR-da4" secondAttribute="bottom" id="vhH-Q3-eAj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="PeY-rD-zdR"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="swipeGif" destination="vhB-uu-TiZ" id="7XF-ZF-Klz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fJV-Zc-cn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOH-rg-7Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="-663"/>
+            <point key="canvasLocation" x="-1528" y="372"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -102,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874" y="14"/>
+            <point key="canvasLocation" x="-823" y="372"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="guP-kZ-tGS">
@@ -133,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCz-yE-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="13"/>
+            <point key="canvasLocation" x="-114" y="371"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="rHe-PO-Res">
@@ -164,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDG-lJ-aTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="551" y="13"/>
+            <point key="canvasLocation" x="602" y="371"/>
         </scene>
     </scenes>
     <resources>
@@ -174,5 +263,7 @@
         <image name="Fluttershy Background" width="640" height="360"/>
         <image name="PinkiePie Background" width="2000" height="2000"/>
         <image name="clear" width="1" height="1"/>
+        <image name="ohh.gif" width="260" height="146"/>
+        <image name="swipe.gif" width="480" height="480"/>
     </resources>
 </document>

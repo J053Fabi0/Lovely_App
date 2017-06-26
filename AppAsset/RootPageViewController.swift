@@ -17,6 +17,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         let sb = UIStoryboard(name: "Main", bundle: nil) //Story Board
         
         let VCrs: [UIViewController] = [ //View Controllers
+            sb.instantiateViewController(withIdentifier: "Swipe"),
             sb.instantiateViewController(withIdentifier: "Fluttershy"),
             sb.instantiateViewController(withIdentifier: "PinkiePie"),
             sb.instantiateViewController(withIdentifier: "AppleJack")]
