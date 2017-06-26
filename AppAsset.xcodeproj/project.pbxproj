@@ -12,6 +12,7 @@
 		F035EDF11F0035C900FD2B5A /* Ponys.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F035EDF01F0035C900FD2B5A /* Ponys.xcassets */; };
 		F035EDF41F00363700FD2B5A /* TabBar Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F035EDF31F00363700FD2B5A /* TabBar Assets.xcassets */; };
 		F035EDF61F0039D200FD2B5A /* FrostyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035EDF51F0039D200FD2B5A /* FrostyTabBar.swift */; };
+		F04B382B1F00A98000161A2E /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B382A1F00A98000161A2E /* NavigationViewController.swift */; };
 		F05389301F00947000AC813E /* swipe.gif in Resources */ = {isa = PBXBuildFile; fileRef = F053892F1F00947000AC813E /* swipe.gif */; };
 		F05389321F00955500AC813E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05389311F00955500AC813E /* SwipeViewController.swift */; };
 		F0612E881EFE160300AC5B9C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0612E871EFE160300AC5B9C /* Launch Screen.storyboard */; };
@@ -29,6 +30,7 @@
 		F035EDF01F0035C900FD2B5A /* Ponys.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Ponys.xcassets; sourceTree = "<group>"; };
 		F035EDF31F00363700FD2B5A /* TabBar Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TabBar Assets.xcassets"; sourceTree = "<group>"; };
 		F035EDF51F0039D200FD2B5A /* FrostyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostyTabBar.swift; sourceTree = "<group>"; };
+		F04B382A1F00A98000161A2E /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		F053892F1F00947000AC813E /* swipe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = swipe.gif; sourceTree = "<group>"; };
 		F05389311F00955500AC813E /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		F0612E871EFE160300AC5B9C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -56,7 +58,10 @@
 		F022AE951EFF3E7E00A7C143 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0612E891EFE1C8200AC5B9C /* RootPageViewController.swift */,
+				F035EDEC1F00328600FD2B5A /* TabBarViewController.swift */,
 				F05389311F00955500AC813E /* SwipeViewController.swift */,
+				F04B382A1F00A98000161A2E /* NavigationViewController.swift */,
 				F035EDEE1F0032A700FD2B5A /* ViewController4.swift */,
 			);
 			name = ViewControllers;
@@ -77,6 +82,8 @@
 		F0612E8B1EFE1CEF00AC5B9C /* Extras */ = {
 			isa = PBXGroup;
 			children = (
+				F0712AA61F0090F00080E6F1 /* GifView.swift */,
+				F035EDF51F0039D200FD2B5A /* FrostyTabBar.swift */,
 				F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */,
 				F0612E871EFE160300AC5B9C /* Launch Screen.storyboard */,
 				F0EF78F21EFE03FE000761B1 /* Info.plist */,
@@ -87,8 +94,8 @@
 		F0EF78DA1EFE03FD000761B1 = {
 			isa = PBXGroup;
 			children = (
-				F0EF78E51EFE03FE000761B1 /* AppAsset */,
 				F0EF78E41EFE03FE000761B1 /* Products */,
+				F0EF78E51EFE03FE000761B1 /* AppAsset */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,10 +114,6 @@
 				F022AE951EFF3E7E00A7C143 /* ViewControllers */,
 				F035EDF21F00360F00FD2B5A /* Resources */,
 				F0EF78EA1EFE03FE000761B1 /* Main.storyboard */,
-				F0712AA61F0090F00080E6F1 /* GifView.swift */,
-				F035EDF51F0039D200FD2B5A /* FrostyTabBar.swift */,
-				F0612E891EFE1C8200AC5B9C /* RootPageViewController.swift */,
-				F035EDEC1F00328600FD2B5A /* TabBarViewController.swift */,
 			);
 			path = AppAsset;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04B382B1F00A98000161A2E /* NavigationViewController.swift in Sources */,
 				F035EDF61F0039D200FD2B5A /* FrostyTabBar.swift in Sources */,
 				F035EDEF1F0032A700FD2B5A /* ViewController4.swift in Sources */,
 				F0612E8A1EFE1C8200AC5B9C /* RootPageViewController.swift in Sources */,
