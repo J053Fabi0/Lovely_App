@@ -51,7 +51,7 @@
                 <navigationController hidesBarsWhenKeyboardAppears="YES" id="ppO-fs-Z5a" customClass="NavigationViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="lq5-Eo-hMD"/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" shadowImage="clear" backIndicatorImage="clear" backIndicatorTransitionMaskImage="clear" id="X3c-IQ-hbY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="X3c-IQ-hbY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="2143" y="-306"/>
         </scene>
-        <!--Colo Amarillo-->
+        <!--Color Amarillo-->
         <scene sceneID="ucN-2p-7ra">
             <objects>
-                <viewController title="Colo Amarillo" id="lBl-WM-5bE" customClass="ViewController4" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Color Amarillo" id="lBl-WM-5bE" customClass="ViewController4" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rnn-i9-Adu"/>
                         <viewControllerLayoutGuide type="bottom" id="QJ8-Dm-cdc"/>

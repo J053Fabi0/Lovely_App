@@ -47,7 +47,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let previousIndex = vcIndex - 1
         
-        guard previousIndex >= 1 else {return viewControllerList[viewControllerList.count - 1]}
+        guard previousIndex >= 1 else {return viewControllerList[viewControllerList.count - 1]} //if P.I. is not greater than 1, no 0, we return the last view, we wont let the view 0 is shown because is the swipeView
         
         guard viewControllerList.count > previousIndex else {return nil}
         
@@ -59,7 +59,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let nextIndex = vcIndex + 1
         
-        guard viewControllerList.count != nextIndex else {return viewControllerList[1]}
+        guard viewControllerList.count != nextIndex else {return viewControllerList[1]} //if the count is the nextIndex, then we return the second view ([1]), the first ([0]) is the swipeView, so we dont want it to be shown
         
         guard viewControllerList.count > nextIndex else {return nil}
         
