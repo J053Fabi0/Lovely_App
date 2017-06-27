@@ -15,6 +15,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let VCrs: [UIViewController] = [
             sb.instantiateViewController(withIdentifier: "Swipe"),
+            sb.instantiateViewController(withIdentifier: "MarioNavigationController"),
             sb.instantiateViewController(withIdentifier: "PonyNavigationController")
         ]
 
@@ -41,7 +42,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         guard previousIndex >= 0 else {return viewControllerList[viewControllerList.count - 1]}
         
-        guard viewControllerList.count > previousIndex else {return nil}
+        guard viewControllerList.count > previousIndex else {return viewControllerList[viewControllerList.count - 1]}
         
         return viewControllerList[previousIndex]
     }
@@ -54,7 +55,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         guard nextIndex != viewControllerList.count else {return viewControllerList[0]}
         
-        guard nextIndex < viewControllerList.count else {return nil}
+        guard nextIndex < viewControllerList.count else {return viewControllerList[0]}
         
         return viewControllerList[nextIndex]
     }

@@ -25,6 +25,9 @@
 		F0B4D3891F0205D800C7250A /* ChoosePonyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3881F0205D800C7250A /* ChoosePonyViewController.swift */; };
 		F0B4D38B1F02115E00C7250A /* Mario.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B4D38A1F02115E00C7250A /* Mario.xcassets */; };
 		F0B4D38D1F02131A00C7250A /* marioGiradorPixel.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0B4D38C1F02131A00C7250A /* marioGiradorPixel.gif */; };
+		F0B4D3961F02947F00C7250A /* MarioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3951F02947F00C7250A /* MarioNavigationController.swift */; };
+		F0B4D3991F0294D300C7250A /* ChooseMarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3981F0294D300C7250A /* ChooseMarioViewController.swift */; };
+		F0B4D39B1F0294FA00C7250A /* MarioPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */; };
 		F0EF78E71EFE03FE000761B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */; };
 		F0EF78EC1EFE03FE000761B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78EA1EFE03FE000761B1 /* Main.storyboard */; };
 		F0EF78EE1EFE03FE000761B1 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78ED1EFE03FE000761B1 /* AppAssets.xcassets */; };
@@ -49,6 +52,9 @@
 		F0B4D3881F0205D800C7250A /* ChoosePonyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePonyViewController.swift; sourceTree = "<group>"; };
 		F0B4D38A1F02115E00C7250A /* Mario.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mario.xcassets; sourceTree = "<group>"; };
 		F0B4D38C1F02131A00C7250A /* marioGiradorPixel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = marioGiradorPixel.gif; sourceTree = "<group>"; };
+		F0B4D3951F02947F00C7250A /* MarioNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarioNavigationController.swift; sourceTree = "<group>"; };
+		F0B4D3981F0294D300C7250A /* ChooseMarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseMarioViewController.swift; sourceTree = "<group>"; };
+		F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarioPageViewController.swift; sourceTree = "<group>"; };
 		F0EF78E31EFE03FE000761B1 /* AppAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EF78EB1EFE03FE000761B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +126,8 @@
 				F05389311F00955500AC813E /* SwipeViewController.swift */,
 				F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */,
 				F0B4D3851F01FA0200C7250A /* PonyNavigationController Childs */,
+				F0B4D3951F02947F00C7250A /* MarioNavigationController.swift */,
+				F0B4D3971F02948900C7250A /* MarioNavigationController Childs */,
 			);
 			name = "RootPageView Childs";
 			sourceTree = "<group>";
@@ -139,6 +147,15 @@
 				F0612E891EFE1C8200AC5B9C /* PonyPageViewController.swift */,
 			);
 			name = "PonyNavigationController Childs";
+			sourceTree = "<group>";
+		};
+		F0B4D3971F02948900C7250A /* MarioNavigationController Childs */ = {
+			isa = PBXGroup;
+			children = (
+				F0B4D3981F0294D300C7250A /* ChooseMarioViewController.swift */,
+				F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */,
+			);
+			name = "MarioNavigationController Childs";
 			sourceTree = "<group>";
 		};
 		F0EF78DA1EFE03FD000761B1 = {
@@ -256,9 +273,12 @@
 				F0612E8A1EFE1C8200AC5B9C /* PonyPageViewController.swift in Sources */,
 				F035EDED1F00328600FD2B5A /* TabBarViewController.swift in Sources */,
 				F0712AA71F0090F00080E6F1 /* GifView.swift in Sources */,
+				F0B4D39B1F0294FA00C7250A /* MarioPageViewController.swift in Sources */,
 				F0B4D37F1F01F5B000C7250A /* RootPageViewController.swift in Sources */,
 				F05389321F00955500AC813E /* SwipeViewController.swift in Sources */,
+				F0B4D3961F02947F00C7250A /* MarioNavigationController.swift in Sources */,
 				F0EF78E71EFE03FE000761B1 /* AppDelegate.swift in Sources */,
+				F0B4D3991F0294D300C7250A /* ChooseMarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
