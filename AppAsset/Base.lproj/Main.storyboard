@@ -600,7 +600,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93573468920000002" green="0.99300211670000005" blue="0.96000009779999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.45004904938975882" blue="0.49587917198129261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="top" secondItem="oEb-OB-Y8E" secondAttribute="bottom" constant="4" id="018-Xc-LMf"/>
                             <constraint firstItem="mFc-5M-Cyg" firstAttribute="centerX" secondItem="oEb-OB-Y8E" secondAttribute="centerX" id="0hO-8r-VpH"/>
@@ -635,7 +635,7 @@
         <image name="8Bit" width="27" height="24"/>
         <image name="8Bit Selected" width="27" height="24"/>
         <image name="AppleJack Background" width="363" height="384"/>
-        <image name="Ballad of the Pegasus Cover" width="353" height="353"/>
+        <image name="Ballad of the Pegasus Cover" width="187" height="187"/>
         <image name="ChampiñonVidaPixel" width="500" height="500"/>
         <image name="Fluttershy Background" width="640" height="360"/>
         <image name="PinkiePie Background" width="2000" height="2000"/>
