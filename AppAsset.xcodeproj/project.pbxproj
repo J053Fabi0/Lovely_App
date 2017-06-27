@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F035EDED1F00328600FD2B5A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035EDEC1F00328600FD2B5A /* TabBarViewController.swift */; };
-		F035EDEF1F0032A700FD2B5A /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035EDEE1F0032A700FD2B5A /* ViewController4.swift */; };
+		F035EDEF1F0032A700FD2B5A /* SurpriseGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035EDEE1F0032A700FD2B5A /* SurpriseGifViewController.swift */; };
 		F035EDF11F0035C900FD2B5A /* Ponys.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F035EDF01F0035C900FD2B5A /* Ponys.xcassets */; };
 		F035EDF41F00363700FD2B5A /* TabBar Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F035EDF31F00363700FD2B5A /* TabBar Assets.xcassets */; };
 		F035EDF61F0039D200FD2B5A /* FrostyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035EDF51F0039D200FD2B5A /* FrostyTabBar.swift */; };
@@ -28,6 +28,9 @@
 		F0B4D3961F02947F00C7250A /* MarioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3951F02947F00C7250A /* MarioNavigationController.swift */; };
 		F0B4D3991F0294D300C7250A /* ChooseMarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3981F0294D300C7250A /* ChooseMarioViewController.swift */; };
 		F0B4D39B1F0294FA00C7250A /* MarioPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */; };
+		F0D6D1591F02DA7F00DE2032 /* Audio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D6D1581F02DA7F00DE2032 /* Audio.xcassets */; };
+		F0D6D15B1F02DAFD00DE2032 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */; };
+		F0D6D15E1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0D6D15D1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 */; };
 		F0EF78E71EFE03FE000761B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */; };
 		F0EF78EC1EFE03FE000761B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78EA1EFE03FE000761B1 /* Main.storyboard */; };
 		F0EF78EE1EFE03FE000761B1 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78ED1EFE03FE000761B1 /* AppAssets.xcassets */; };
@@ -35,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F035EDEC1F00328600FD2B5A /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		F035EDEE1F0032A700FD2B5A /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		F035EDEE1F0032A700FD2B5A /* SurpriseGifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurpriseGifViewController.swift; sourceTree = "<group>"; };
 		F035EDF01F0035C900FD2B5A /* Ponys.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Ponys.xcassets; sourceTree = "<group>"; };
 		F035EDF31F00363700FD2B5A /* TabBar Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TabBar Assets.xcassets"; sourceTree = "<group>"; };
 		F035EDF51F0039D200FD2B5A /* FrostyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostyTabBar.swift; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		F0B4D3951F02947F00C7250A /* MarioNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarioNavigationController.swift; sourceTree = "<group>"; };
 		F0B4D3981F0294D300C7250A /* ChooseMarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseMarioViewController.swift; sourceTree = "<group>"; };
 		F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarioPageViewController.swift; sourceTree = "<group>"; };
+		F0D6D1581F02DA7F00DE2032 /* Audio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Audio.xcassets; sourceTree = "<group>"; };
+		F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		F0D6D15D1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ballad of the Pegasus.mp3"; sourceTree = "<group>"; };
 		F0EF78E31EFE03FE000761B1 /* AppAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EF78EB1EFE03FE000761B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,10 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				F0B4D37D1F01E2B300C7250A /* Gif */,
+				F0D6D15C1F02DB1E00DE2032 /* Songs */,
 				F0EF78ED1EFE03FE000761B1 /* AppAssets.xcassets */,
 				F035EDF01F0035C900FD2B5A /* Ponys.xcassets */,
 				F0B4D38A1F02115E00C7250A /* Mario.xcassets */,
 				F035EDF31F00363700FD2B5A /* TabBar Assets.xcassets */,
+				F0D6D1581F02DA7F00DE2032 /* Audio.xcassets */,
 			);
 			name = Resources/Images;
 			sourceTree = "<group>";
@@ -135,7 +143,8 @@
 		F0B4D3821F01F62600C7250A /* NavigationController Childs */ = {
 			isa = PBXGroup;
 			children = (
-				F035EDEE1F0032A700FD2B5A /* ViewController4.swift */,
+				F035EDEE1F0032A700FD2B5A /* SurpriseGifViewController.swift */,
+				F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */,
 			);
 			name = "NavigationController Childs";
 			sourceTree = "<group>";
@@ -156,6 +165,14 @@
 				F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */,
 			);
 			name = "MarioNavigationController Childs";
+			sourceTree = "<group>";
+		};
+		F0D6D15C1F02DB1E00DE2032 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				F0D6D15D1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 */,
+			);
+			name = Songs;
 			sourceTree = "<group>";
 		};
 		F0EF78DA1EFE03FD000761B1 = {
@@ -249,12 +266,14 @@
 				F0EF78EE1EFE03FE000761B1 /* AppAssets.xcassets in Resources */,
 				F035EDF41F00363700FD2B5A /* TabBar Assets.xcassets in Resources */,
 				F0B4D38D1F02131A00C7250A /* marioGiradorPixel.gif in Resources */,
+				F0D6D1591F02DA7F00DE2032 /* Audio.xcassets in Resources */,
 				F0712AA91F0091320080E6F1 /* ohh.gif in Resources */,
 				F0B4D3871F02054900C7250A /* firePony.gif in Resources */,
 				F0EF78EC1EFE03FE000761B1 /* Main.storyboard in Resources */,
 				F0B4D38B1F02115E00C7250A /* Mario.xcassets in Resources */,
 				F05389301F00947000AC813E /* swipe.gif in Resources */,
 				F035EDF11F0035C900FD2B5A /* Ponys.xcassets in Resources */,
+				F0D6D15E1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +286,11 @@
 			files = (
 				F04B382B1F00A98000161A2E /* NavigationViewController.swift in Sources */,
 				F035EDF61F0039D200FD2B5A /* FrostyTabBar.swift in Sources */,
-				F035EDEF1F0032A700FD2B5A /* ViewController4.swift in Sources */,
+				F035EDEF1F0032A700FD2B5A /* SurpriseGifViewController.swift in Sources */,
 				F0B4D3891F0205D800C7250A /* ChoosePonyViewController.swift in Sources */,
 				F0B4D3841F01F9F000C7250A /* PonyNavigationController.swift in Sources */,
 				F0612E8A1EFE1C8200AC5B9C /* PonyPageViewController.swift in Sources */,
+				F0D6D15B1F02DAFD00DE2032 /* MusicViewController.swift in Sources */,
 				F035EDED1F00328600FD2B5A /* TabBarViewController.swift in Sources */,
 				F0712AA71F0090F00080E6F1 /* GifView.swift in Sources */,
 				F0B4D39B1F0294FA00C7250A /* MarioPageViewController.swift in Sources */,

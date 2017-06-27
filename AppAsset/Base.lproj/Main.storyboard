@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,7 +47,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNy-sX-tCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="1956"/>
+            <point key="canvasLocation" x="8" y="1882"/>
         </scene>
         <!--Mario Page View Controller-->
         <scene sceneID="QIX-7f-kqs">
@@ -54,7 +57,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lx-IA-Mxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="1955"/>
+            <point key="canvasLocation" x="863" y="1881"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="i5v-PB-vyr">
@@ -72,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHE-03-RAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="-306"/>
+            <point key="canvasLocation" x="1594" y="-306"/>
         </scene>
         <!--Color Rojo-->
         <scene sceneID="P12-Gf-VGd">
@@ -86,23 +89,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JZ-1r-25y">
-                                <rect key="frame" x="123" y="247" width="74" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB5-Ht-wLq">
+                                <rect key="frame" x="136" y="260" width="48" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="DPC-2E-iWl"/>
-                                    <constraint firstAttribute="width" constant="74" id="KNO-fX-0Cp"/>
+                                    <constraint firstAttribute="width" constant="48" id="Brx-BM-FFY"/>
+                                    <constraint firstAttribute="height" constant="48" id="vgL-Hr-0KA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
-                                <state key="normal" title="&gt;">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsG-TZ-nSH">
+                                <rect key="frame" x="290" y="489" width="30" height="30"/>
+                                <state key="normal" title="🎵"/>
+                                <connections>
+                                    <segue destination="Vky-PI-xfr" kind="show" id="n7I-6f-Xyi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.44043064724081632" green="0.5" blue="0.88471526675170065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="5JZ-1r-25y" firstAttribute="centerX" secondItem="3mj-OX-OW0" secondAttribute="centerX" id="1mx-kd-vTo"/>
-                            <constraint firstItem="5JZ-1r-25y" firstAttribute="centerY" secondItem="3mj-OX-OW0" secondAttribute="centerY" id="eqJ-cr-D3a"/>
+                            <constraint firstItem="ZON-RE-OFJ" firstAttribute="top" secondItem="DsG-TZ-nSH" secondAttribute="bottom" id="7bH-HL-VQc"/>
+                            <constraint firstAttribute="trailing" secondItem="DsG-TZ-nSH" secondAttribute="trailing" id="Du3-kH-imu"/>
+                            <constraint firstItem="BB5-Ht-wLq" firstAttribute="centerX" secondItem="3mj-OX-OW0" secondAttribute="centerX" id="RAW-uH-v51"/>
+                            <constraint firstItem="BB5-Ht-wLq" firstAttribute="centerY" secondItem="3mj-OX-OW0" secondAttribute="centerY" id="cah-di-bMX"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Q3l-OY-XjL" appends="YES" id="sl6-xC-opa"/>
@@ -118,7 +129,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2143" y="-306"/>
+            <point key="canvasLocation" x="2409" y="-306"/>
         </scene>
         <!--Mario Navigation Controller-->
         <scene sceneID="WG6-Y8-Ja0">
@@ -135,12 +146,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGV-p2-JFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864" y="500"/>
+            <point key="canvasLocation" x="863" y="427"/>
         </scene>
         <!--Color Amarillo-->
         <scene sceneID="ucN-2p-7ra">
             <objects>
-                <viewController title="Color Amarillo" id="lBl-WM-5bE" customClass="ViewController4" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Color Amarillo" id="lBl-WM-5bE" customClass="SurpriseGifViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rnn-i9-Adu"/>
                         <viewControllerLayoutGuide type="bottom" id="QJ8-Dm-cdc"/>
@@ -167,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3J-Sg-AJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2957" y="-306"/>
+            <point key="canvasLocation" x="3356" y="-673"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="Jcx-z4-ihP">
@@ -217,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOH-rg-7Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-758" y="500"/>
+            <point key="canvasLocation" x="-759" y="427"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -248,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1419" y="2644"/>
+            <point key="canvasLocation" x="-1419" y="2570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="guP-kZ-tGS">
@@ -279,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCz-yE-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="2644"/>
+            <point key="canvasLocation" x="-705" y="2570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rHe-PO-Res">
@@ -310,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDG-lJ-aTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="2644"/>
+            <point key="canvasLocation" x="8" y="2570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jLj-xM-Ttx">
@@ -340,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5w-58-ldy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="2643"/>
+            <point key="canvasLocation" x="863" y="2570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9AB-jT-KDJ">
@@ -370,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TA-Fb-xkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="2643"/>
+            <point key="canvasLocation" x="1594" y="2570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DwO-3Y-lFg">
@@ -400,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8XR-cv-Y1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2312" y="2643"/>
+            <point key="canvasLocation" x="2312" y="2570"/>
         </scene>
         <!--8 Bit-->
         <scene sceneID="BeV-3X-KIv">
@@ -464,7 +475,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="8" y="1225"/>
+            <point key="canvasLocation" x="8" y="1151"/>
         </scene>
         <!--Mario-->
         <scene sceneID="v2Y-uZ-CrN">
@@ -517,7 +528,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="862.5" y="1225.3521126760563"/>
+            <point key="canvasLocation" x="863" y="1152"/>
         </scene>
         <!--Pony Navigation Controller-->
         <scene sceneID="8Hu-Rt-ZaN">
@@ -534,18 +545,107 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlk-Ag-xYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="500"/>
+            <point key="canvasLocation" x="8" y="427"/>
+        </scene>
+        <!--Ballad of the Pegasus-->
+        <scene sceneID="joW-Tt-iFD">
+            <objects>
+                <viewController title="Ballad of the Pegasus" id="Vky-PI-xfr" customClass="MusicViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IBS-Xf-NSD"/>
+                        <viewControllerLayoutGuide type="bottom" id="KfA-iN-a3f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5mL-Cu-Izm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ballad of the Pegasus Cover" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-OB-Y8E">
+                                <rect key="frame" x="40" y="44" width="240" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oEb-OB-Y8E" secondAttribute="height" multiplier="240:227" id="y3c-pG-3gA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFc-5M-Cyg">
+                                <rect key="frame" x="133" y="275" width="55" height="54.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mFc-5M-Cyg" secondAttribute="height" multiplier="1:1" id="loA-h8-q5v"/>
+                                </constraints>
+                                <state key="normal" image="Play"/>
+                                <state key="selected" image="Selected Play"/>
+                                <state key="highlighted" image="Selected Play"/>
+                                <connections>
+                                    <action selector="playAudio" destination="Vky-PI-xfr" eventType="touchUpInside" id="0iN-nI-YuQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-Vn-OdJ">
+                                <rect key="frame" x="224.5" y="275" width="55.5" height="54.5"/>
+                                <state key="normal" image="Stop"/>
+                                <state key="selected" image="Selected Stop"/>
+                                <state key="highlighted" image="Selected Stop"/>
+                                <connections>
+                                    <action selector="stopButton" destination="Vky-PI-xfr" eventType="touchUpInside" id="fcT-Fi-fJ0"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ISS-Vg-YNp">
+                                <rect key="frame" x="84" y="412.5" width="198" height="31"/>
+                                <connections>
+                                    <action selector="changeVolumen" destination="Vky-PI-xfr" eventType="valueChanged" id="BgC-SY-bHb"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Volume 2" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-S3-ikZ">
+                                <rect key="frame" x="52" y="412.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dE0-2z-yBE"/>
+                                    <constraint firstAttribute="width" constant="30" id="oOA-wl-FS6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93573468920000002" green="0.99300211670000005" blue="0.96000009779999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="top" secondItem="oEb-OB-Y8E" secondAttribute="bottom" constant="4" id="018-Xc-LMf"/>
+                            <constraint firstItem="mFc-5M-Cyg" firstAttribute="centerX" secondItem="oEb-OB-Y8E" secondAttribute="centerX" id="0hO-8r-VpH"/>
+                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="leading" secondItem="ba7-S3-ikZ" secondAttribute="trailing" constant="4" id="0qi-op-8G0"/>
+                            <constraint firstItem="mFc-5M-Cyg" firstAttribute="top" secondItem="oEb-OB-Y8E" secondAttribute="bottom" constant="4" id="6lR-Vl-IWq"/>
+                            <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="trailing" secondItem="oEb-OB-Y8E" secondAttribute="trailing" id="Avm-rz-i6Y"/>
+                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="trailing" secondItem="oEb-OB-Y8E" secondAttribute="trailing" id="FJm-19-6GU"/>
+                            <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="height" secondItem="mFc-5M-Cyg" secondAttribute="height" id="OG4-kH-rnL"/>
+                            <constraint firstItem="oEb-OB-Y8E" firstAttribute="top" secondItem="IBS-Xf-NSD" secondAttribute="bottom" id="Ret-Ug-psM"/>
+                            <constraint firstItem="oEb-OB-Y8E" firstAttribute="centerX" secondItem="5mL-Cu-Izm" secondAttribute="centerX" id="WUb-NI-PqH"/>
+                            <constraint firstItem="oEb-OB-Y8E" firstAttribute="leading" secondItem="5mL-Cu-Izm" secondAttribute="leadingMargin" constant="24" id="Ygv-eJ-UCG"/>
+                            <constraint firstItem="mFc-5M-Cyg" firstAttribute="width" secondItem="oEb-OB-Y8E" secondAttribute="width" multiplier="0.23" id="aVY-q9-1dK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oEb-OB-Y8E" secondAttribute="trailing" constant="24" id="cAa-lb-bhk"/>
+                            <constraint firstItem="ba7-S3-ikZ" firstAttribute="leading" secondItem="5mL-Cu-Izm" secondAttribute="leadingMargin" constant="36" id="kfU-92-ndM"/>
+                            <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="width" secondItem="mFc-5M-Cyg" secondAttribute="width" id="nMH-Q3-oBC"/>
+                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="top" secondItem="6Ff-Vn-OdJ" secondAttribute="bottom" constant="83" id="wHe-Up-Zki"/>
+                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="centerY" secondItem="ba7-S3-ikZ" secondAttribute="centerY" id="y5c-NK-tXJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playPauseButton" destination="mFc-5M-Cyg" id="qnq-fl-lIq"/>
+                        <outlet property="volumeController" destination="ISS-Vg-YNp" id="zVA-Xo-ECw"/>
+                        <outlet property="volumeImage" destination="ba7-S3-ikZ" id="lec-GD-eqP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bP3-Eo-3Oy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3356" y="60"/>
         </scene>
     </scenes>
     <resources>
         <image name="8Bit" width="27" height="24"/>
         <image name="8Bit Selected" width="27" height="24"/>
         <image name="AppleJack Background" width="363" height="384"/>
+        <image name="Ballad of the Pegasus Cover" width="353" height="353"/>
         <image name="ChampiñonVidaPixel" width="500" height="500"/>
         <image name="Fluttershy Background" width="640" height="360"/>
         <image name="PinkiePie Background" width="2000" height="2000"/>
         <image name="PixelGoldenShell" width="527" height="500"/>
         <image name="PixelMario" width="396" height="528"/>
+        <image name="Play" width="170" height="170"/>
+        <image name="Selected Play" width="170" height="170"/>
+        <image name="Selected Stop" width="170" height="170"/>
+        <image name="Stop" width="170" height="170"/>
+        <image name="Volume 2" width="170" height="170"/>
         <image name="clear" width="1" height="1"/>
         <image name="firePony.gif" width="112" height="134"/>
         <image name="marioGiradorPixel.gif" width="320" height="320"/>
