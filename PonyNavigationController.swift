@@ -1,28 +1,24 @@
 //
-//  SwipeViewController.swift
+//  PonyNavigationController.swift
 //  AppAsset
 //
-//  Created by Jose Fabio_ on 25/06/17.
+//  Created by Jose Fabio_ on 26/06/17.
 //  Copyright © 2017 com.yoyomero.josefabio. All rights reserved.
 //
 
 import UIKit
 
-class SwipeViewController: UIViewController {
-    
-    @IBOutlet var swipeGif: UIImageView!
+class PonyNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        swipeGif.loadGif(name: "swipe")
-        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 }

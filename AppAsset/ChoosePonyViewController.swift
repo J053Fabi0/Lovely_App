@@ -1,28 +1,26 @@
 //
-//  SwipeViewController.swift
+//  ChoosePonyViewController.swift
 //  AppAsset
 //
-//  Created by Jose Fabio_ on 25/06/17.
+//  Created by Jose Fabio_ on 26/06/17.
 //  Copyright © 2017 com.yoyomero.josefabio. All rights reserved.
 //
 
 import UIKit
 
-class SwipeViewController: UIViewController {
+class ChoosePonyViewController: UIViewController {
     
-    @IBOutlet var swipeGif: UIImageView!
+    @IBOutlet var firePonyGif: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        swipeGif.loadGif(name: "swipe")
-        
+        firePonyGif.loadGif(name: "firePony")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 }

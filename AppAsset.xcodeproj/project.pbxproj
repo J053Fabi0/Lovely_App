@@ -16,12 +16,18 @@
 		F05389301F00947000AC813E /* swipe.gif in Resources */ = {isa = PBXBuildFile; fileRef = F053892F1F00947000AC813E /* swipe.gif */; };
 		F05389321F00955500AC813E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05389311F00955500AC813E /* SwipeViewController.swift */; };
 		F0612E881EFE160300AC5B9C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0612E871EFE160300AC5B9C /* Launch Screen.storyboard */; };
-		F0612E8A1EFE1C8200AC5B9C /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0612E891EFE1C8200AC5B9C /* RootPageViewController.swift */; };
+		F0612E8A1EFE1C8200AC5B9C /* PonyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0612E891EFE1C8200AC5B9C /* PonyPageViewController.swift */; };
 		F0712AA71F0090F00080E6F1 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0712AA61F0090F00080E6F1 /* GifView.swift */; };
 		F0712AA91F0091320080E6F1 /* ohh.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0712AA81F0091320080E6F1 /* ohh.gif */; };
+		F0B4D37F1F01F5B000C7250A /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D37E1F01F5B000C7250A /* RootPageViewController.swift */; };
+		F0B4D3841F01F9F000C7250A /* PonyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */; };
+		F0B4D3871F02054900C7250A /* firePony.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0B4D3861F02054900C7250A /* firePony.gif */; };
+		F0B4D3891F0205D800C7250A /* ChoosePonyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3881F0205D800C7250A /* ChoosePonyViewController.swift */; };
+		F0B4D38B1F02115E00C7250A /* Mario.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B4D38A1F02115E00C7250A /* Mario.xcassets */; };
+		F0B4D38D1F02131A00C7250A /* marioGiradorPixel.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0B4D38C1F02131A00C7250A /* marioGiradorPixel.gif */; };
 		F0EF78E71EFE03FE000761B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */; };
 		F0EF78EC1EFE03FE000761B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78EA1EFE03FE000761B1 /* Main.storyboard */; };
-		F0EF78EE1EFE03FE000761B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78ED1EFE03FE000761B1 /* Assets.xcassets */; };
+		F0EF78EE1EFE03FE000761B1 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78ED1EFE03FE000761B1 /* AppAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,13 +40,19 @@
 		F053892F1F00947000AC813E /* swipe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = swipe.gif; sourceTree = "<group>"; };
 		F05389311F00955500AC813E /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		F0612E871EFE160300AC5B9C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		F0612E891EFE1C8200AC5B9C /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		F0612E891EFE1C8200AC5B9C /* PonyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonyPageViewController.swift; sourceTree = "<group>"; };
 		F0712AA61F0090F00080E6F1 /* GifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
 		F0712AA81F0091320080E6F1 /* ohh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ohh.gif; sourceTree = "<group>"; };
+		F0B4D37E1F01F5B000C7250A /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootPageViewController.swift; path = ../RootPageViewController.swift; sourceTree = "<group>"; };
+		F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PonyNavigationController.swift; path = ../PonyNavigationController.swift; sourceTree = "<group>"; };
+		F0B4D3861F02054900C7250A /* firePony.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = firePony.gif; sourceTree = "<group>"; };
+		F0B4D3881F0205D800C7250A /* ChoosePonyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePonyViewController.swift; sourceTree = "<group>"; };
+		F0B4D38A1F02115E00C7250A /* Mario.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mario.xcassets; sourceTree = "<group>"; };
+		F0B4D38C1F02131A00C7250A /* marioGiradorPixel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = marioGiradorPixel.gif; sourceTree = "<group>"; };
 		F0EF78E31EFE03FE000761B1 /* AppAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EF78EB1EFE03FE000761B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F0EF78ED1EFE03FE000761B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0EF78ED1EFE03FE000761B1 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
 		F0EF78F21EFE03FE000761B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,25 +70,25 @@
 		F022AE951EFF3E7E00A7C143 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F0612E891EFE1C8200AC5B9C /* RootPageViewController.swift */,
 				F035EDEC1F00328600FD2B5A /* TabBarViewController.swift */,
-				F05389311F00955500AC813E /* SwipeViewController.swift */,
+				F0B4D37E1F01F5B000C7250A /* RootPageViewController.swift */,
+				F0B4D3811F01F61400C7250A /* RootPageView Childs */,
 				F04B382A1F00A98000161A2E /* NavigationViewController.swift */,
-				F035EDEE1F0032A700FD2B5A /* ViewController4.swift */,
+				F0B4D3821F01F62600C7250A /* NavigationController Childs */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		F035EDF21F00360F00FD2B5A /* Resources */ = {
+		F035EDF21F00360F00FD2B5A /* Resources/Images */ = {
 			isa = PBXGroup;
 			children = (
-				F0712AA81F0091320080E6F1 /* ohh.gif */,
-				F053892F1F00947000AC813E /* swipe.gif */,
-				F0EF78ED1EFE03FE000761B1 /* Assets.xcassets */,
+				F0B4D37D1F01E2B300C7250A /* Gif */,
+				F0EF78ED1EFE03FE000761B1 /* AppAssets.xcassets */,
 				F035EDF01F0035C900FD2B5A /* Ponys.xcassets */,
+				F0B4D38A1F02115E00C7250A /* Mario.xcassets */,
 				F035EDF31F00363700FD2B5A /* TabBar Assets.xcassets */,
 			);
-			name = Resources;
+			name = Resources/Images;
 			sourceTree = "<group>";
 		};
 		F0612E8B1EFE1CEF00AC5B9C /* Extras */ = {
@@ -91,10 +103,49 @@
 			name = Extras;
 			sourceTree = "<group>";
 		};
+		F0B4D37D1F01E2B300C7250A /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				F0B4D38C1F02131A00C7250A /* marioGiradorPixel.gif */,
+				F0B4D3861F02054900C7250A /* firePony.gif */,
+				F0712AA81F0091320080E6F1 /* ohh.gif */,
+				F053892F1F00947000AC813E /* swipe.gif */,
+			);
+			name = Gif;
+			sourceTree = "<group>";
+		};
+		F0B4D3811F01F61400C7250A /* RootPageView Childs */ = {
+			isa = PBXGroup;
+			children = (
+				F05389311F00955500AC813E /* SwipeViewController.swift */,
+				F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */,
+				F0B4D3851F01FA0200C7250A /* PonyNavigationController Childs */,
+			);
+			name = "RootPageView Childs";
+			sourceTree = "<group>";
+		};
+		F0B4D3821F01F62600C7250A /* NavigationController Childs */ = {
+			isa = PBXGroup;
+			children = (
+				F035EDEE1F0032A700FD2B5A /* ViewController4.swift */,
+			);
+			name = "NavigationController Childs";
+			sourceTree = "<group>";
+		};
+		F0B4D3851F01FA0200C7250A /* PonyNavigationController Childs */ = {
+			isa = PBXGroup;
+			children = (
+				F0B4D3881F0205D800C7250A /* ChoosePonyViewController.swift */,
+				F0612E891EFE1C8200AC5B9C /* PonyPageViewController.swift */,
+			);
+			name = "PonyNavigationController Childs";
+			sourceTree = "<group>";
+		};
 		F0EF78DA1EFE03FD000761B1 = {
 			isa = PBXGroup;
 			children = (
 				F0EF78E51EFE03FE000761B1 /* AppAsset */,
+				F0EF78EA1EFE03FE000761B1 /* Main.storyboard */,
 				F0EF78E41EFE03FE000761B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,9 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				F0612E8B1EFE1CEF00AC5B9C /* Extras */,
+				F035EDF21F00360F00FD2B5A /* Resources/Images */,
 				F022AE951EFF3E7E00A7C143 /* ViewControllers */,
-				F035EDF21F00360F00FD2B5A /* Resources */,
-				F0EF78EA1EFE03FE000761B1 /* Main.storyboard */,
 			);
 			path = AppAsset;
 			sourceTree = "<group>";
@@ -179,10 +229,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0612E881EFE160300AC5B9C /* Launch Screen.storyboard in Resources */,
-				F0EF78EE1EFE03FE000761B1 /* Assets.xcassets in Resources */,
+				F0EF78EE1EFE03FE000761B1 /* AppAssets.xcassets in Resources */,
 				F035EDF41F00363700FD2B5A /* TabBar Assets.xcassets in Resources */,
+				F0B4D38D1F02131A00C7250A /* marioGiradorPixel.gif in Resources */,
 				F0712AA91F0091320080E6F1 /* ohh.gif in Resources */,
+				F0B4D3871F02054900C7250A /* firePony.gif in Resources */,
 				F0EF78EC1EFE03FE000761B1 /* Main.storyboard in Resources */,
+				F0B4D38B1F02115E00C7250A /* Mario.xcassets in Resources */,
 				F05389301F00947000AC813E /* swipe.gif in Resources */,
 				F035EDF11F0035C900FD2B5A /* Ponys.xcassets in Resources */,
 			);
@@ -198,9 +251,12 @@
 				F04B382B1F00A98000161A2E /* NavigationViewController.swift in Sources */,
 				F035EDF61F0039D200FD2B5A /* FrostyTabBar.swift in Sources */,
 				F035EDEF1F0032A700FD2B5A /* ViewController4.swift in Sources */,
-				F0612E8A1EFE1C8200AC5B9C /* RootPageViewController.swift in Sources */,
+				F0B4D3891F0205D800C7250A /* ChoosePonyViewController.swift in Sources */,
+				F0B4D3841F01F9F000C7250A /* PonyNavigationController.swift in Sources */,
+				F0612E8A1EFE1C8200AC5B9C /* PonyPageViewController.swift in Sources */,
 				F035EDED1F00328600FD2B5A /* TabBarViewController.swift in Sources */,
 				F0712AA71F0090F00080E6F1 /* GifView.swift in Sources */,
+				F0B4D37F1F01F5B000C7250A /* RootPageViewController.swift in Sources */,
 				F05389321F00955500AC813E /* SwipeViewController.swift in Sources */,
 				F0EF78E71EFE03FE000761B1 /* AppDelegate.swift in Sources */,
 			);
@@ -215,6 +271,7 @@
 				F0EF78EB1EFE03FE000761B1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = AppAsset;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,6 +378,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
 				DEVELOPMENT_TEAM = 4JWQ6476UG;
 				INFOPLIST_FILE = AppAsset/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoyomero.josefabio.AppAsset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,6 +395,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
 				DEVELOPMENT_TEAM = 4JWQ6476UG;
 				INFOPLIST_FILE = AppAsset/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoyomero.josefabio.AppAsset;

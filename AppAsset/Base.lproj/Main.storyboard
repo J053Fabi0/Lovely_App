@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +27,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="ui2-bQ-Jd6" kind="relationship" relationship="viewControllers" id="9se-k5-VZZ"/>
+                        <segue destination="5S9-c4-nRA" kind="relationship" relationship="viewControllers" id="IPy-fN-fcC"/>
                         <segue destination="ppO-fs-Z5a" kind="relationship" relationship="viewControllers" id="toU-68-UNz"/>
                     </connections>
                 </tabBarController>
@@ -37,13 +38,24 @@
         <!--8 Bits-->
         <scene sceneID="WE4-MB-e8i">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ui2-bQ-Jd6" customClass="RootPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="ponyPageView" modalTransitionStyle="flipHorizontal" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ui2-bQ-Jd6" customClass="PonyPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="8 Bits" image="8Bit" selectedImage="8Bit Selected" id="Uzu-rt-79V"/>
+                    <navigationItem key="navigationItem" id="Uk8-bc-Fbm"/>
                     <nil key="simulatedStatusBarMetrics"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNy-sX-tCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-463" y="-306"/>
+            <point key="canvasLocation" x="8" y="1956"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="QIX-7f-kqs">
+            <objects>
+                <pageViewController storyboardIdentifier="MarioPageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="qWO-WF-q6i" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lx-IA-Mxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="1955"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="i5v-PB-vyr">
@@ -90,7 +102,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.77923804519999995" green="0.41344058509999998" blue="0.40892338750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44043064724081632" green="0.5" blue="0.88471526675170065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5JZ-1r-25y" firstAttribute="centerX" secondItem="3mj-OX-OW0" secondAttribute="centerX" id="1mx-kd-vTo"/>
                             <constraint firstItem="5JZ-1r-25y" firstAttribute="centerY" secondItem="3mj-OX-OW0" secondAttribute="centerY" id="eqJ-cr-D3a"/>
@@ -102,6 +114,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7o-JQ-Vn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2143" y="-306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WG6-Y8-Ja0">
+            <objects>
+                <navigationController storyboardIdentifier="MarioNavigationController" id="ajq-EQ-b7O" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="voi-DU-VMS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QLb-M6-BtW" kind="relationship" relationship="rootViewController" id="YTg-Mp-8cZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGV-p2-JFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="500"/>
         </scene>
         <!--Color Amarillo-->
         <scene sceneID="ucN-2p-7ra">
@@ -147,25 +176,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-uu-TiZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.85160446166992188" green="0.82804447412490845" blue="0.79026353359222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desliza el dedo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puc-cY-dGY">
                                 <rect key="frame" x="76" y="20" width="168" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-uu-TiZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.85160446166992188" green="0.82804447412490845" blue="0.79026353359222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desliza el dedo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReQ-6K-ERz">
+                                <rect key="frame" x="76" y="47" width="168" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85160446170000004" green="0.82804447410000004" blue="0.79026353360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="height" secondItem="vip-iq-xIo" secondAttribute="height" id="3se-Cq-qlq"/>
                             <constraint firstItem="Puc-cY-dGY" firstAttribute="centerX" secondItem="vip-iq-xIo" secondAttribute="centerX" id="G5y-WQ-xWN"/>
                             <constraint firstItem="Puc-cY-dGY" firstAttribute="top" secondItem="TOW-HR-da4" secondAttribute="bottom" constant="20" id="JEz-2c-bp4"/>
-                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="leading" secondItem="vip-iq-xIo" secondAttribute="leading" id="OUu-52-vDT"/>
-                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="width" secondItem="vip-iq-xIo" secondAttribute="width" id="eNb-wr-abB"/>
-                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="height" secondItem="vip-iq-xIo" secondAttribute="height" id="eqm-c6-9U9"/>
-                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="top" secondItem="TOW-HR-da4" secondAttribute="bottom" id="vhH-Q3-eAj"/>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="centerY" secondItem="vip-iq-xIo" secondAttribute="centerY" id="LR6-WV-5ME"/>
+                            <constraint firstItem="ReQ-6K-ERz" firstAttribute="top" secondItem="TOW-HR-da4" secondAttribute="bottom" constant="47" id="RAY-Fj-VYH"/>
+                            <constraint firstItem="ReQ-6K-ERz" firstAttribute="centerX" secondItem="vip-iq-xIo" secondAttribute="centerX" id="Szc-cL-i8J"/>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="width" secondItem="vip-iq-xIo" secondAttribute="width" id="enq-1s-NDu"/>
+                            <constraint firstItem="vhB-uu-TiZ" firstAttribute="centerX" secondItem="vip-iq-xIo" secondAttribute="centerX" id="pmv-ap-fhd"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -175,12 +212,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOH-rg-7Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1528" y="372"/>
+            <point key="canvasLocation" x="-758" y="500"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Fluttershy" id="BYZ-38-t0r" customClass="ViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FluttershyVC" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -194,24 +231,24 @@
                                 <color key="backgroundColor" red="0.75913709399999996" green="0.41100406649999999" blue="0.53295749429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.75913709402084351" green="0.41100406646728516" blue="0.53295749425888062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KaV-1k-5fE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EJ9-OW-Ihw"/>
-                            <constraint firstItem="KaV-1k-5fE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jWB-gr-MbC"/>
-                            <constraint firstItem="KaV-1k-5fE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qTI-Sf-SzX"/>
-                            <constraint firstItem="KaV-1k-5fE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ylx-NM-lc5"/>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J6g-6s-eyD"/>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="L51-UL-IQx"/>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TkM-76-W5M"/>
+                            <constraint firstItem="KaV-1k-5fE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="xCq-4A-fU8"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-823" y="372"/>
+            <point key="canvasLocation" x="-1419" y="2644"/>
         </scene>
-        <!--View Controller2-->
+        <!--View Controller-->
         <scene sceneID="guP-kZ-tGS">
             <objects>
-                <viewController storyboardIdentifier="PinkiePie" id="n9P-yj-j1Z" customClass="ViewController2" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PinkiePieVC" id="n9P-yj-j1Z" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z1J-Ju-qUw"/>
                         <viewControllerLayoutGuide type="bottom" id="q3x-xy-hkY"/>
@@ -225,24 +262,24 @@
                                 <color key="backgroundColor" red="0.97447222471237183" green="0.69261306524276733" blue="0.69813871383666992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97447222471237183" green="0.69261306524276733" blue="0.69813871383666992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="leading" secondItem="iII-a2-8jH" secondAttribute="leading" id="31X-ih-KZj"/>
-                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="width" secondItem="iII-a2-8jH" secondAttribute="width" id="WrI-C8-rUQ"/>
-                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="height" secondItem="iII-a2-8jH" secondAttribute="height" id="YTC-O6-Yx1"/>
-                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="top" secondItem="z1J-Ju-qUw" secondAttribute="bottom" id="olX-Df-tsz"/>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="centerY" secondItem="iII-a2-8jH" secondAttribute="centerY" id="5bK-Hz-gQI"/>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="height" secondItem="iII-a2-8jH" secondAttribute="height" id="9Ys-C9-kNj"/>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="width" secondItem="iII-a2-8jH" secondAttribute="width" id="TA9-ey-EKJ"/>
+                            <constraint firstItem="I9Q-GL-Qcg" firstAttribute="centerX" secondItem="iII-a2-8jH" secondAttribute="centerX" id="k9o-nM-cGr"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCz-yE-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114" y="371"/>
+            <point key="canvasLocation" x="-705" y="2644"/>
         </scene>
-        <!--View Controller3-->
+        <!--View Controller-->
         <scene sceneID="rHe-PO-Res">
             <objects>
-                <viewController storyboardIdentifier="AppleJack" id="N3n-cu-pas" customClass="ViewController3" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppleJackVC" id="N3n-cu-pas" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yxY-mY-Qhj"/>
                         <viewControllerLayoutGuide type="bottom" id="4fO-dD-U4r"/>
@@ -256,28 +293,254 @@
                                 <color key="backgroundColor" red="0.77923804521560669" green="0.41344058513641357" blue="0.40892338752746582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.77923804521560669" green="0.41344058513641357" blue="0.40892338752746582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IXV-M4-Nic" firstAttribute="top" secondItem="yxY-mY-Qhj" secondAttribute="bottom" id="04N-0H-L9p"/>
-                            <constraint firstItem="IXV-M4-Nic" firstAttribute="leading" secondItem="g1A-Ld-Cfd" secondAttribute="leading" id="2AR-Ry-BfA"/>
-                            <constraint firstItem="IXV-M4-Nic" firstAttribute="width" secondItem="g1A-Ld-Cfd" secondAttribute="width" id="Y57-uW-Hym"/>
-                            <constraint firstItem="IXV-M4-Nic" firstAttribute="height" secondItem="g1A-Ld-Cfd" secondAttribute="height" id="eRc-Jh-OvV"/>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="centerX" secondItem="g1A-Ld-Cfd" secondAttribute="centerX" id="Hfg-Sg-9JZ"/>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="width" secondItem="g1A-Ld-Cfd" secondAttribute="width" id="LXJ-Qe-Uij"/>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="centerY" secondItem="g1A-Ld-Cfd" secondAttribute="centerY" id="bRp-Xh-sLW"/>
+                            <constraint firstItem="IXV-M4-Nic" firstAttribute="height" secondItem="g1A-Ld-Cfd" secondAttribute="height" id="qbD-je-oI3"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDG-lJ-aTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602" y="371"/>
+            <point key="canvasLocation" x="8" y="2644"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jLj-xM-Ttx">
+            <objects>
+                <viewController storyboardIdentifier="GoldenShellVC" id="L1X-tm-pXq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="955-zt-XNt"/>
+                        <viewControllerLayoutGuide type="bottom" id="CNG-bz-SRd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GXB-UM-4lV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PixelGoldenShell" translatesAutoresizingMaskIntoConstraints="NO" id="fOA-mv-hKL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95872873067855835" green="0.70849442481994629" blue="0.4164387583732605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fOA-mv-hKL" firstAttribute="width" secondItem="GXB-UM-4lV" secondAttribute="width" id="8oc-TJ-1cN"/>
+                            <constraint firstItem="fOA-mv-hKL" firstAttribute="centerX" secondItem="GXB-UM-4lV" secondAttribute="centerX" id="D8W-jq-EAE"/>
+                            <constraint firstItem="fOA-mv-hKL" firstAttribute="height" secondItem="GXB-UM-4lV" secondAttribute="height" id="Dcw-az-Vi2"/>
+                            <constraint firstItem="fOA-mv-hKL" firstAttribute="centerY" secondItem="GXB-UM-4lV" secondAttribute="centerY" id="yGZ-Go-F2T"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5w-58-ldy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="2643"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9AB-jT-KDJ">
+            <objects>
+                <viewController storyboardIdentifier="LifeVC" id="60W-BR-fEi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pUo-rc-13i"/>
+                        <viewControllerLayoutGuide type="bottom" id="joY-Y5-Zak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T1o-1x-Yss">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChampiñonVidaPixel" translatesAutoresizingMaskIntoConstraints="NO" id="u4J-9V-cOP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0065795443952083588" green="0.52137106657028198" blue="0.31934672594070435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u4J-9V-cOP" firstAttribute="width" secondItem="T1o-1x-Yss" secondAttribute="width" id="HbU-Ov-V8X"/>
+                            <constraint firstItem="u4J-9V-cOP" firstAttribute="height" secondItem="T1o-1x-Yss" secondAttribute="height" id="Kme-Zd-k0O"/>
+                            <constraint firstItem="u4J-9V-cOP" firstAttribute="centerY" secondItem="T1o-1x-Yss" secondAttribute="centerY" id="Wcl-sn-kum"/>
+                            <constraint firstItem="u4J-9V-cOP" firstAttribute="centerX" secondItem="T1o-1x-Yss" secondAttribute="centerX" id="vlZ-wz-0as"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TA-Fb-xkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="2643"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DwO-3Y-lFg">
+            <objects>
+                <viewController storyboardIdentifier="MarioVC" id="LKh-7t-Mp9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9zX-Cm-J75"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibB-cX-7zP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LJz-Bh-UxG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PixelMario" translatesAutoresizingMaskIntoConstraints="NO" id="kJW-Ic-1lk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57143187522888184" green="0.00082740717334672809" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kJW-Ic-1lk" firstAttribute="centerX" secondItem="LJz-Bh-UxG" secondAttribute="centerX" id="CTU-aJ-NXR"/>
+                            <constraint firstItem="kJW-Ic-1lk" firstAttribute="centerY" secondItem="LJz-Bh-UxG" secondAttribute="centerY" id="M3B-Kt-Kdp"/>
+                            <constraint firstItem="kJW-Ic-1lk" firstAttribute="width" secondItem="LJz-Bh-UxG" secondAttribute="width" id="bjH-P2-2Dz"/>
+                            <constraint firstItem="kJW-Ic-1lk" firstAttribute="height" secondItem="LJz-Bh-UxG" secondAttribute="height" id="gxb-sW-dXz"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8XR-cv-Y1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2312" y="2643"/>
+        </scene>
+        <!--8 Bit-->
+        <scene sceneID="BeV-3X-KIv">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="5S9-c4-nRA" customClass="RootPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="8 Bit" image="8Bit" selectedImage="8Bit Selected" id="1xU-In-j83"/>
+                    <navigationItem key="navigationItem" id="aXo-32-Aip"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slC-jO-K26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-131" y="-306"/>
+        </scene>
+        <!--8 Bit-->
+        <scene sceneID="fjx-Da-iVa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeH-6y-eCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="PonyNavigationController" modalTransitionStyle="flipHorizontal" id="hnH-QZ-QLJ" customClass="PonyNavigationController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="8 Bit" image="8Bit Selected" id="4ED-xH-h5Y"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="370-uv-x4W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ocY-Lg-rnw" kind="relationship" relationship="rootViewController" id="CBj-KM-SqO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="8" y="500"/>
+        </scene>
+        <!--Ponys-->
+        <scene sceneID="PQ5-lK-vr8">
+            <objects>
+                <viewController storyboardIdentifier="GraleriaPonyVC" id="ocY-Lg-rnw" customClass="ChoosePonyViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2qS-gG-DH7"/>
+                        <viewControllerLayoutGuide type="bottom" id="kNP-2Y-70Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="redraw" id="xwM-mT-GqY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firePony.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Yn4-W7-3Ni">
+                                <rect key="frame" x="104" y="217" width="112" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yn4-W7-3Ni" secondAttribute="height" multiplier="56:67" id="I6L-XU-xxd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver galería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM3-ec-evl">
+                                <rect key="frame" x="102" y="176" width="116.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.18251344559999999" blue="0.47839480639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93759864568710327" green="0.93544155359268188" blue="0.80607956647872925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="rM3-ec-evl" firstAttribute="centerX" secondItem="xwM-mT-GqY" secondAttribute="centerX" id="JfO-Xx-WuR"/>
+                            <constraint firstItem="Yn4-W7-3Ni" firstAttribute="centerX" secondItem="xwM-mT-GqY" secondAttribute="centerX" id="P8h-uv-HrK"/>
+                            <constraint firstItem="Yn4-W7-3Ni" firstAttribute="top" secondItem="rM3-ec-evl" secondAttribute="bottom" constant="8" id="Quz-EK-o7M"/>
+                            <constraint firstItem="Yn4-W7-3Ni" firstAttribute="centerY" secondItem="xwM-mT-GqY" secondAttribute="centerY" id="Sjl-iv-nSo"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zqR-dy-aUb" appends="YES" id="Esr-An-Xdj"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ponys" id="LoW-i0-wz3"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="firePonyGif" destination="Yn4-W7-3Ni" id="iTk-k0-1sE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdj-9U-Ri7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="zqR-dy-aUb">
+                    <connections>
+                        <segue destination="ui2-bQ-Jd6" kind="show" id="esx-cc-ezG"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="8" y="1227"/>
+        </scene>
+        <!--Mario-->
+        <scene sceneID="v2Y-uZ-CrN">
+            <objects>
+                <viewController storyboardIdentifier="VerGaleriaMarioVC" id="QLb-M6-BtW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OwI-Rt-Hw1"/>
+                        <viewControllerLayoutGuide type="bottom" id="UxS-q1-ymi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aiw-Tq-GcB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marioGiradorPixel.gif" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-lk-XTE">
+                                <rect key="frame" x="104" y="220" width="113" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="AhB-LH-RVr"/>
+                                    <constraint firstAttribute="height" constant="128" id="cbV-5O-LDO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver galería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-vE-hK6">
+                                <rect key="frame" x="102" y="179" width="116.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.18251344559999999" blue="0.47839480639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71136164665222168" green="0.63811409473419189" blue="0.68315333127975464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yUa-lk-XTE" firstAttribute="centerX" secondItem="Aiw-Tq-GcB" secondAttribute="centerX" id="JnQ-io-ILb"/>
+                            <constraint firstItem="2gX-vE-hK6" firstAttribute="centerX" secondItem="Aiw-Tq-GcB" secondAttribute="centerX" id="LYF-Q1-Ef9"/>
+                            <constraint firstItem="yUa-lk-XTE" firstAttribute="top" secondItem="2gX-vE-hK6" secondAttribute="bottom" constant="8" id="pa3-gv-Gyz"/>
+                            <constraint firstItem="yUa-lk-XTE" firstAttribute="centerY" secondItem="Aiw-Tq-GcB" secondAttribute="centerY" id="xO8-br-pEf"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pco-HU-x5a" appends="YES" id="dwH-k0-vn1"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mario" id="sgf-9m-2gv"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1S-cO-uhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pco-HU-x5a">
+                    <connections>
+                        <segue destination="qWO-WF-q6i" kind="show" id="OTp-QL-wbJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="862.5" y="1225.3521126760563"/>
         </scene>
     </scenes>
     <resources>
         <image name="8Bit" width="27" height="24"/>
         <image name="8Bit Selected" width="27" height="24"/>
         <image name="AppleJack Background" width="363" height="384"/>
+        <image name="ChampiñonVidaPixel" width="500" height="500"/>
         <image name="Fluttershy Background" width="640" height="360"/>
         <image name="PinkiePie Background" width="2000" height="2000"/>
+        <image name="PixelGoldenShell" width="527" height="500"/>
+        <image name="PixelMario" width="396" height="528"/>
         <image name="clear" width="1" height="1"/>
+        <image name="firePony.gif" width="112" height="134"/>
+        <image name="marioGiradorPixel.gif" width="320" height="320"/>
         <image name="ohh.gif" width="260" height="146"/>
         <image name="swipe.gif" width="480" height="480"/>
     </resources>
