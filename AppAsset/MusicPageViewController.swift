@@ -14,7 +14,8 @@ class MusicPageViewController: UIPageViewController, UIPageViewControllerDataSou
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
         let VCrs: [UIViewController] = [
-            sb.instantiateViewController(withIdentifier: "BalladPegasusVC")]
+            sb.instantiateViewController(withIdentifier: "BalladPegasusVC"),
+            sb.instantiateViewController(withIdentifier: "DowntownVC")]
         
         return VCrs
     }()

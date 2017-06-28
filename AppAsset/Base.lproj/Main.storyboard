@@ -47,7 +47,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNy-sX-tCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="1882"/>
+            <point key="canvasLocation" x="-2124" y="1958"/>
         </scene>
         <!--Mario Page View Controller-->
         <scene sceneID="QIX-7f-kqs">
@@ -57,7 +57,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lx-IA-Mxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="1881"/>
+            <point key="canvasLocation" x="863" y="1958"/>
         </scene>
         <!--More Tab Page View Controller-->
         <scene sceneID="rim-Sa-efN">
@@ -237,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1419" y="2570"/>
+            <point key="canvasLocation" x="-1419" y="1960"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="guP-kZ-tGS">
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCz-yE-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="2570"/>
+            <point key="canvasLocation" x="-705" y="1960"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rHe-PO-Res">
@@ -299,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDG-lJ-aTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="2570"/>
+            <point key="canvasLocation" x="8" y="1960"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jLj-xM-Ttx">
@@ -329,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5w-58-ldy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="2570"/>
+            <point key="canvasLocation" x="1594" y="1958"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9AB-jT-KDJ">
@@ -359,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TA-Fb-xkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="2570"/>
+            <point key="canvasLocation" x="2325" y="1958"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DwO-3Y-lFg">
@@ -389,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8XR-cv-Y1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2312" y="2570"/>
+            <point key="canvasLocation" x="3043" y="1958"/>
         </scene>
         <!--8 Bit-->
         <scene sceneID="BeV-3X-KIv">
@@ -538,7 +538,7 @@
         <!--Ballad of the Pegasus-->
         <scene sceneID="joW-Tt-iFD">
             <objects>
-                <viewController storyboardIdentifier="BalladPegasusVC" title="Ballad of the Pegasus" id="Vky-PI-xfr" customClass="MusicViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BalladPegasusVC" title="Ballad of the Pegasus" id="Vky-PI-xfr" customClass="BallaPegasusVC" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IBS-Xf-NSD"/>
                         <viewControllerLayoutGuide type="bottom" id="KfA-iN-a3f"/>
@@ -596,7 +596,7 @@
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="1" stepValue="0.0625" translatesAutoresizingMaskIntoConstraints="NO" id="6gw-sC-jPR">
                                         <rect key="frame" x="35" y="0.0" width="94" height="29"/>
-                                        <color key="backgroundColor" red="0.0060906736179999997" green="0.62007361650000004" blue="0.38088855150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.64338690042495728" green="0.63143789768218994" blue="0.62707030773162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="changeVolumen" destination="Vky-PI-xfr" eventType="valueChanged" id="x3B-Ag-5fd"/>
@@ -605,7 +605,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.74936574697494507" green="0.75164347887039185" blue="0.58027875423431396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.19605264067649841" green="0.19609326124191284" blue="0.19605004787445068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="top" secondItem="oEb-OB-Y8E" secondAttribute="bottom" constant="4" id="018-Xc-LMf"/>
                             <constraint firstItem="mFc-5M-Cyg" firstAttribute="centerX" secondItem="oEb-OB-Y8E" secondAttribute="centerX" id="0hO-8r-VpH"/>
@@ -633,18 +633,117 @@
             </objects>
             <point key="canvasLocation" x="3857" y="64"/>
         </scene>
+        <!--DowntownVC-->
+        <scene sceneID="FLp-Wk-876">
+            <objects>
+                <viewController storyboardIdentifier="DowntownVC" id="eXM-V1-MjE" customClass="DowntownVC" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wI3-3O-5aQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sfT-L4-duJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2tI-Dm-U8q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProleteR" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-IF-a4Q">
+                                <rect key="frame" x="40" y="30" width="240" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rbc-IF-a4Q" secondAttribute="height" multiplier="240:227" id="bsf-2A-9Lb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1G-ig-0ua">
+                                <rect key="frame" x="133" y="261" width="55" height="55.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A1G-ig-0ua" secondAttribute="height" multiplier="1:1" id="QrD-wP-RTd"/>
+                                </constraints>
+                                <state key="normal" image="Play"/>
+                                <state key="selected" image="Selected Play"/>
+                                <state key="highlighted" image="Selected Play"/>
+                                <connections>
+                                    <action selector="playAudio" destination="eXM-V1-MjE" eventType="touchUpInside" id="38O-tX-UxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tf-Wk-FYI">
+                                <rect key="frame" x="224.5" y="261" width="55.5" height="55.5"/>
+                                <state key="normal" image="Stop"/>
+                                <state key="selected" image="Selected Stop"/>
+                                <state key="highlighted" image="Selected Stop"/>
+                                <connections>
+                                    <action selector="stopButton" destination="eXM-V1-MjE" eventType="touchUpInside" id="YoE-bO-9OU"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lit-mJ-acx">
+                                <rect key="frame" x="96" y="398" width="129" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Volume 3" translatesAutoresizingMaskIntoConstraints="NO" id="OHe-aE-ord">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Hf9-Rs-NA4"/>
+                                            <constraint firstAttribute="width" constant="30" id="jjX-t9-mOW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5k-V9-yJx">
+                                        <rect key="frame" x="30" y="0.0" width="5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QJS-TA-ndv"/>
+                                            <constraint firstAttribute="width" constant="5" id="bSA-oR-EOp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="1" stepValue="0.0625" translatesAutoresizingMaskIntoConstraints="NO" id="79C-dk-QJD">
+                                        <rect key="frame" x="35" y="0.0" width="94" height="29"/>
+                                        <color key="backgroundColor" red="0.38705119490623474" green="0.19134591536618034" blue="0.084882799766849579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeVolumen" destination="eXM-V1-MjE" eventType="valueChanged" id="LD2-Nj-c6P"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93303400278091431" green="0.94133943319320679" blue="0.93707340955734253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3tf-Wk-FYI" firstAttribute="width" secondItem="A1G-ig-0ua" secondAttribute="width" id="BhX-va-RAz"/>
+                            <constraint firstItem="rbc-IF-a4Q" firstAttribute="centerX" secondItem="2tI-Dm-U8q" secondAttribute="centerX" id="IDj-7Y-baw"/>
+                            <constraint firstItem="lit-mJ-acx" firstAttribute="centerX" secondItem="rbc-IF-a4Q" secondAttribute="centerX" id="JKD-HM-Zvg"/>
+                            <constraint firstItem="A1G-ig-0ua" firstAttribute="width" secondItem="rbc-IF-a4Q" secondAttribute="width" multiplier="0.23" id="cS0-hQ-wtM"/>
+                            <constraint firstItem="rbc-IF-a4Q" firstAttribute="top" secondItem="wI3-3O-5aQ" secondAttribute="bottom" constant="30" id="dp3-RR-uOw"/>
+                            <constraint firstItem="3tf-Wk-FYI" firstAttribute="top" secondItem="rbc-IF-a4Q" secondAttribute="bottom" constant="4" id="ftl-45-aOj"/>
+                            <constraint firstItem="A1G-ig-0ua" firstAttribute="centerX" secondItem="rbc-IF-a4Q" secondAttribute="centerX" id="gh2-pJ-Ga3"/>
+                            <constraint firstItem="3tf-Wk-FYI" firstAttribute="height" secondItem="A1G-ig-0ua" secondAttribute="height" id="hDZ-11-zFQ"/>
+                            <constraint firstItem="3tf-Wk-FYI" firstAttribute="trailing" secondItem="rbc-IF-a4Q" secondAttribute="trailing" id="jXw-BX-Dg4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rbc-IF-a4Q" secondAttribute="trailing" constant="24" id="jYs-Nr-38u"/>
+                            <constraint firstItem="lit-mJ-acx" firstAttribute="top" secondItem="3tf-Wk-FYI" secondAttribute="bottom" constant="81.5" id="oER-WS-6G0"/>
+                            <constraint firstItem="A1G-ig-0ua" firstAttribute="top" secondItem="rbc-IF-a4Q" secondAttribute="bottom" constant="4" id="tfr-KL-NAg"/>
+                            <constraint firstItem="rbc-IF-a4Q" firstAttribute="leading" secondItem="2tI-Dm-U8q" secondAttribute="leadingMargin" constant="24" id="z6S-yW-hhz"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="playPauseButton" destination="A1G-ig-0ua" id="IMh-sh-0G1"/>
+                        <outlet property="volumeController" destination="79C-dk-QJD" id="fYI-YR-Pmn"/>
+                        <outlet property="volumeImage" destination="OHe-aE-ord" id="oGD-Jy-Yal"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JyA-Xi-4hm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4699" y="63"/>
+        </scene>
     </scenes>
     <resources>
         <image name="8Bit" width="27" height="24"/>
         <image name="8Bit Selected" width="27" height="24"/>
         <image name="AppleJack Background" width="363" height="384"/>
-        <image name="Ballad of the Pegasus Cover" width="187" height="187"/>
+        <image name="Ballad of the Pegasus Cover" width="283" height="283"/>
         <image name="ChampiñonVidaPixel" width="500" height="500"/>
         <image name="Fluttershy Background" width="640" height="360"/>
         <image name="PinkiePie Background" width="2000" height="2000"/>
         <image name="PixelGoldenShell" width="527" height="500"/>
         <image name="PixelMario" width="396" height="528"/>
         <image name="Play" width="170" height="170"/>
+        <image name="ProleteR" width="372" height="373"/>
         <image name="Selected Play" width="170" height="170"/>
         <image name="Selected Stop" width="170" height="170"/>
         <image name="Stop" width="170" height="170"/>

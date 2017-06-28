@@ -21,6 +21,8 @@
 		F07432BC1F0360730092E0CC /* moreTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07432BB1F0360730092E0CC /* moreTabPageViewController.swift */; };
 		F07432C01F03EED80092E0CC /* MusicPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07432BF1F03EED80092E0CC /* MusicPageViewController.swift */; };
 		F07432C21F03F4AA0092E0CC /* SurpriseGifPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07432C11F03F4AA0092E0CC /* SurpriseGifPageViewController.swift */; };
+		F07432E41F0423C50092E0CC /* DowntownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07432E31F0423C50092E0CC /* DowntownVC.swift */; };
+		F07432E61F0424500092E0CC /* Downtown Irony.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F07432E51F0424500092E0CC /* Downtown Irony.mp3 */; };
 		F0B4D37F1F01F5B000C7250A /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D37E1F01F5B000C7250A /* RootPageViewController.swift */; };
 		F0B4D3841F01F9F000C7250A /* PonyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */; };
 		F0B4D3871F02054900C7250A /* firePony.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0B4D3861F02054900C7250A /* firePony.gif */; };
@@ -31,7 +33,7 @@
 		F0B4D3991F0294D300C7250A /* ChooseMarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3981F0294D300C7250A /* ChooseMarioViewController.swift */; };
 		F0B4D39B1F0294FA00C7250A /* MarioPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */; };
 		F0D6D1591F02DA7F00DE2032 /* Audio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D6D1581F02DA7F00DE2032 /* Audio.xcassets */; };
-		F0D6D15B1F02DAFD00DE2032 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */; };
+		F0D6D15B1F02DAFD00DE2032 /* BallaPegasusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6D15A1F02DAFD00DE2032 /* BallaPegasusVC.swift */; };
 		F0D6D15E1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0D6D15D1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 */; };
 		F0EF78E71EFE03FE000761B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */; };
 		F0EF78EC1EFE03FE000761B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EF78EA1EFE03FE000761B1 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		F07432BB1F0360730092E0CC /* moreTabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreTabPageViewController.swift; sourceTree = "<group>"; };
 		F07432BF1F03EED80092E0CC /* MusicPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPageViewController.swift; sourceTree = "<group>"; };
 		F07432C11F03F4AA0092E0CC /* SurpriseGifPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurpriseGifPageViewController.swift; sourceTree = "<group>"; };
+		F07432E31F0423C50092E0CC /* DowntownVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DowntownVC.swift; sourceTree = "<group>"; };
+		F07432E51F0424500092E0CC /* Downtown Irony.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Downtown Irony.mp3"; sourceTree = "<group>"; };
 		F0B4D37E1F01F5B000C7250A /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootPageViewController.swift; path = ../RootPageViewController.swift; sourceTree = "<group>"; };
 		F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PonyNavigationController.swift; path = ../PonyNavigationController.swift; sourceTree = "<group>"; };
 		F0B4D3861F02054900C7250A /* firePony.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = firePony.gif; sourceTree = "<group>"; };
@@ -63,7 +67,7 @@
 		F0B4D3981F0294D300C7250A /* ChooseMarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseMarioViewController.swift; sourceTree = "<group>"; };
 		F0B4D39A1F0294FA00C7250A /* MarioPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarioPageViewController.swift; sourceTree = "<group>"; };
 		F0D6D1581F02DA7F00DE2032 /* Audio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Audio.xcassets; sourceTree = "<group>"; };
-		F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		F0D6D15A1F02DAFD00DE2032 /* BallaPegasusVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallaPegasusVC.swift; sourceTree = "<group>"; };
 		F0D6D15D1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ballad of the Pegasus.mp3"; sourceTree = "<group>"; };
 		F0EF78E31EFE03FE000761B1 /* AppAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EF78E61EFE03FE000761B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +139,8 @@
 		F07432BE1F03EE5D0092E0CC /* MusicPVC */ = {
 			isa = PBXGroup;
 			children = (
-				F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */,
+				F0D6D15A1F02DAFD00DE2032 /* BallaPegasusVC.swift */,
+				F07432E31F0423C50092E0CC /* DowntownVC.swift */,
 			);
 			name = MusicPVC;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				F0D6D15D1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 */,
+				F07432E51F0424500092E0CC /* Downtown Irony.mp3 */,
 			);
 			name = Songs;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				F0B4D38B1F02115E00C7250A /* Mario.xcassets in Resources */,
 				F05389301F00947000AC813E /* swipe.gif in Resources */,
 				F035EDF11F0035C900FD2B5A /* Ponys.xcassets in Resources */,
+				F07432E61F0424500092E0CC /* Downtown Irony.mp3 in Resources */,
 				F0D6D15E1F02DB2A00DE2032 /* Ballad of the Pegasus.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,10 +319,11 @@
 				F0B4D3891F0205D800C7250A /* ChoosePonyViewController.swift in Sources */,
 				F0B4D3841F01F9F000C7250A /* PonyNavigationController.swift in Sources */,
 				F0612E8A1EFE1C8200AC5B9C /* PonyPageViewController.swift in Sources */,
-				F0D6D15B1F02DAFD00DE2032 /* MusicViewController.swift in Sources */,
+				F0D6D15B1F02DAFD00DE2032 /* BallaPegasusVC.swift in Sources */,
 				F07432C21F03F4AA0092E0CC /* SurpriseGifPageViewController.swift in Sources */,
 				F07432C01F03EED80092E0CC /* MusicPageViewController.swift in Sources */,
 				F035EDED1F00328600FD2B5A /* TabBarViewController.swift in Sources */,
+				F07432E41F0423C50092E0CC /* DowntownVC.swift in Sources */,
 				F0712AA71F0090F00080E6F1 /* GifView.swift in Sources */,
 				F0B4D39B1F0294FA00C7250A /* MarioPageViewController.swift in Sources */,
 				F0B4D37F1F01F5B000C7250A /* RootPageViewController.swift in Sources */,
