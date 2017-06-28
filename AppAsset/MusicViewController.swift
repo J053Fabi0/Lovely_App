@@ -16,16 +16,16 @@ class MusicViewController: UIViewController {
     
     @IBOutlet var playPauseButton: UIButton!
     
-    @IBOutlet var volumeController: UISlider!
+    @IBOutlet var volumeController: UIStepper!
     
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         
-        volumeController.minimumValue = 0
-        volumeController.maximumValue = 1
-        
-        volumeController.value = 1
+        let volumeView = MPVolumeView()
+        if let view = volumeView.subviews.first as? UISlider{
+            view.value = 1
+        }
         
         //Get the path of the audio
         let myFilePathString = Bundle.main.path(forResource: "Ballad of the Pegasus", ofType: "mp3")
@@ -70,8 +70,7 @@ class MusicViewController: UIViewController {
         
         let volumeView = MPVolumeView()
         if let view = volumeView.subviews.first as? UISlider{
-            view.value = currentVolume //---0 to 1.0---
-            
+            view.value = Float(currentVolume) //---0 to 1.0---
         }
         
         if currentVolume == 0 {

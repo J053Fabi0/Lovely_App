@@ -30,7 +30,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="5S9-c4-nRA" kind="relationship" relationship="viewControllers" id="IPy-fN-fcC"/>
-                        <segue destination="ppO-fs-Z5a" kind="relationship" relationship="viewControllers" id="toU-68-UNz"/>
+                        <segue destination="mBs-Yp-6Uw" kind="relationship" relationship="viewControllers" id="SjK-i1-9A7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2f-sh-Mep" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -40,7 +40,7 @@
         <!--8 Bits-->
         <scene sceneID="WE4-MB-e8i">
             <objects>
-                <pageViewController storyboardIdentifier="ponyPageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="ui2-bQ-Jd6" customClass="PonyPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="ponyPageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ui2-bQ-Jd6" customClass="PonyPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="8 Bits" image="8Bit" selectedImage="8Bit Selected" id="Uzu-rt-79V"/>
                     <navigationItem key="navigationItem" id="Uk8-bc-Fbm"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -52,40 +52,33 @@
         <!--Mario Page View Controller-->
         <scene sceneID="QIX-7f-kqs">
             <objects>
-                <pageViewController storyboardIdentifier="MarioPageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="qWO-WF-q6i" customClass="MarioPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="MarioPageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="qWO-WF-q6i" customClass="MarioPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedStatusBarMetrics"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lx-IA-Mxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="863" y="1881"/>
         </scene>
-        <!--Navigation View Controller-->
-        <scene sceneID="i5v-PB-vyr">
-            <objects>
-                <navigationController hidesBarsWhenKeyboardAppears="YES" id="ppO-fs-Z5a" customClass="NavigationViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="lq5-Eo-hMD"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="X3c-IQ-hbY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="mBs-Yp-6Uw" kind="relationship" relationship="rootViewController" id="0Ac-Fi-KfX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HHE-03-RAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1594" y="-306"/>
-        </scene>
         <!--More Tab Page View Controller-->
         <scene sceneID="rim-Sa-efN">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="mBs-Yp-6Uw" customClass="moreTabPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="9vW-oB-nic"/>
                     <navigationItem key="navigationItem" id="7N9-Al-jDg"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7d-oe-Hby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2518" y="-306"/>
+            <point key="canvasLocation" x="1941" y="-306"/>
+        </scene>
+        <!--Surprise Gif Page View Controller-->
+        <scene sceneID="agU-qi-xVW">
+            <objects>
+                <pageViewController storyboardIdentifier="SurpriseGifPVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ah1-bO-dsb" customClass="SurpriseGifPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzL-L4-xB9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="-677"/>
         </scene>
         <!--Color Rojo-->
         <scene sceneID="P12-Gf-VGd">
@@ -116,21 +109,13 @@
                             <constraint firstItem="BB5-Ht-wLq" firstAttribute="centerX" secondItem="3mj-OX-OW0" secondAttribute="centerX" id="RAW-uH-v51"/>
                             <constraint firstItem="BB5-Ht-wLq" firstAttribute="centerY" secondItem="3mj-OX-OW0" secondAttribute="centerY" id="cah-di-bMX"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Q3l-OY-XjL" appends="YES" id="sl6-xC-opa"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Color Rojo" id="gaY-zv-AeR"/>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7o-JQ-Vn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Q3l-OY-XjL">
-                    <connections>
-                        <segue destination="lBl-WM-5bE" kind="show" id="mo4-nd-9Dh"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3561" y="-685"/>
+            <point key="canvasLocation" x="3857" y="-677"/>
         </scene>
         <!--Mario Navigation Controller-->
         <scene sceneID="WG6-Y8-Ja0">
@@ -152,7 +137,7 @@
         <!--Color Amarillo-->
         <scene sceneID="ucN-2p-7ra">
             <objects>
-                <viewController title="Color Amarillo" id="lBl-WM-5bE" customClass="SurpriseGifViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SurpriceGifVC" title="Color Amarillo" id="lBl-WM-5bE" customClass="SurpriseGifViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rnn-i9-Adu"/>
                         <viewControllerLayoutGuide type="bottom" id="QJ8-Dm-cdc"/>
@@ -179,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3J-Sg-AJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4406" y="-685"/>
+            <point key="canvasLocation" x="4699" y="-677"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="Jcx-z4-ihP">
@@ -430,14 +415,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firePony.gif" translatesAutoresizingMaskIntoConstraints="NO" id="iDd-XJ-H4K">
-                                <rect key="frame" x="95" y="216" width="131" height="137"/>
+                                <rect key="frame" x="94.5" y="215.5" width="131" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="SCD-Zt-4pO"/>
                                     <constraint firstAttribute="height" constant="137" id="d3b-YR-U7x"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver galería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9P-8q-tlc">
-                                <rect key="frame" x="102" y="175" width="116.5" height="33"/>
+                                <rect key="frame" x="102" y="174.5" width="116.5" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.18251344559999999" blue="0.47839480639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -483,7 +468,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marioGiradorPixel.gif" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-lk-XTE">
-                                <rect key="frame" x="104" y="220" width="113" height="128"/>
+                                <rect key="frame" x="103.5" y="220" width="113" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="AhB-LH-RVr"/>
                                     <constraint firstAttribute="height" constant="128" id="cbV-5O-LDO"/>
@@ -543,12 +528,12 @@
         <!--Music Page View Controller-->
         <scene sceneID="lrp-lp-E0J">
             <objects>
-                <pageViewController storyboardIdentifier="musicPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="RGV-ZL-0wA" customClass="MusicPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="MusicPVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="RGV-ZL-0wA" customClass="MusicPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedStatusBarMetrics"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MaX-Oz-F9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3561" y="67"/>
+            <point key="canvasLocation" x="3017" y="64"/>
         </scene>
         <!--Ballad of the Pegasus-->
         <scene sceneID="joW-Tt-iFD">
@@ -563,13 +548,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ballad of the Pegasus Cover" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-OB-Y8E">
-                                <rect key="frame" x="40" y="0.0" width="240" height="227"/>
+                                <rect key="frame" x="40" y="30" width="240" height="227"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oEb-OB-Y8E" secondAttribute="height" multiplier="240:227" id="y3c-pG-3gA"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFc-5M-Cyg">
-                                <rect key="frame" x="133" y="231" width="55" height="54.5"/>
+                                <rect key="frame" x="133" y="261" width="55" height="55.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mFc-5M-Cyg" secondAttribute="height" multiplier="1:1" id="loA-h8-q5v"/>
                                 </constraints>
@@ -581,7 +566,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-Vn-OdJ">
-                                <rect key="frame" x="224.5" y="231" width="55.5" height="54.5"/>
+                                <rect key="frame" x="224.5" y="261" width="55.5" height="55.5"/>
                                 <state key="normal" image="Stop"/>
                                 <state key="selected" image="Selected Stop"/>
                                 <state key="highlighted" image="Selected Stop"/>
@@ -589,50 +574,64 @@
                                     <action selector="stopButton" destination="Vky-PI-xfr" eventType="touchUpInside" id="fcT-Fi-fJ0"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ISS-Vg-YNp">
-                                <rect key="frame" x="84" y="368.5" width="198" height="31"/>
-                                <connections>
-                                    <action selector="changeVolumen" destination="Vky-PI-xfr" eventType="valueChanged" id="BgC-SY-bHb"/>
-                                </connections>
-                            </slider>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Volume 2" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-S3-ikZ">
-                                <rect key="frame" x="52" y="368.5" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dE0-2z-yBE"/>
-                                    <constraint firstAttribute="width" constant="30" id="oOA-wl-FS6"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgQ-vw-q2V">
+                                <rect key="frame" x="96" y="398" width="129" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Volume 3" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-S3-ikZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Sk3-Ls-0Mo"/>
+                                            <constraint firstAttribute="width" constant="30" id="h3g-9z-Pwl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkN-AQ-ahW">
+                                        <rect key="frame" x="30" y="0.0" width="5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="5" id="hd9-Zn-Fe7"/>
+                                            <constraint firstAttribute="height" constant="30" id="yWo-MG-nVf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="1" stepValue="0.0625" translatesAutoresizingMaskIntoConstraints="NO" id="6gw-sC-jPR">
+                                        <rect key="frame" x="35" y="0.0" width="94" height="29"/>
+                                        <color key="backgroundColor" red="0.0060906736179999997" green="0.62007361650000004" blue="0.38088855150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeVolumen" destination="Vky-PI-xfr" eventType="valueChanged" id="x3B-Ag-5fd"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.45004904938975882" blue="0.49587917198129261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74936574697494507" green="0.75164347887039185" blue="0.58027875423431396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="top" secondItem="oEb-OB-Y8E" secondAttribute="bottom" constant="4" id="018-Xc-LMf"/>
                             <constraint firstItem="mFc-5M-Cyg" firstAttribute="centerX" secondItem="oEb-OB-Y8E" secondAttribute="centerX" id="0hO-8r-VpH"/>
-                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="leading" secondItem="ba7-S3-ikZ" secondAttribute="trailing" constant="4" id="0qi-op-8G0"/>
                             <constraint firstItem="mFc-5M-Cyg" firstAttribute="top" secondItem="oEb-OB-Y8E" secondAttribute="bottom" constant="4" id="6lR-Vl-IWq"/>
                             <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="trailing" secondItem="oEb-OB-Y8E" secondAttribute="trailing" id="Avm-rz-i6Y"/>
-                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="trailing" secondItem="oEb-OB-Y8E" secondAttribute="trailing" id="FJm-19-6GU"/>
                             <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="height" secondItem="mFc-5M-Cyg" secondAttribute="height" id="OG4-kH-rnL"/>
-                            <constraint firstItem="oEb-OB-Y8E" firstAttribute="top" secondItem="IBS-Xf-NSD" secondAttribute="bottom" id="Ret-Ug-psM"/>
+                            <constraint firstItem="oEb-OB-Y8E" firstAttribute="top" secondItem="IBS-Xf-NSD" secondAttribute="bottom" constant="30" id="Ret-Ug-psM"/>
                             <constraint firstItem="oEb-OB-Y8E" firstAttribute="centerX" secondItem="5mL-Cu-Izm" secondAttribute="centerX" id="WUb-NI-PqH"/>
                             <constraint firstItem="oEb-OB-Y8E" firstAttribute="leading" secondItem="5mL-Cu-Izm" secondAttribute="leadingMargin" constant="24" id="Ygv-eJ-UCG"/>
                             <constraint firstItem="mFc-5M-Cyg" firstAttribute="width" secondItem="oEb-OB-Y8E" secondAttribute="width" multiplier="0.23" id="aVY-q9-1dK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oEb-OB-Y8E" secondAttribute="trailing" constant="24" id="cAa-lb-bhk"/>
-                            <constraint firstItem="ba7-S3-ikZ" firstAttribute="leading" secondItem="5mL-Cu-Izm" secondAttribute="leadingMargin" constant="36" id="kfU-92-ndM"/>
                             <constraint firstItem="6Ff-Vn-OdJ" firstAttribute="width" secondItem="mFc-5M-Cyg" secondAttribute="width" id="nMH-Q3-oBC"/>
-                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="top" secondItem="6Ff-Vn-OdJ" secondAttribute="bottom" constant="83" id="wHe-Up-Zki"/>
-                            <constraint firstItem="ISS-Vg-YNp" firstAttribute="centerY" secondItem="ba7-S3-ikZ" secondAttribute="centerY" id="y5c-NK-tXJ"/>
+                            <constraint firstItem="cgQ-vw-q2V" firstAttribute="centerX" secondItem="oEb-OB-Y8E" secondAttribute="centerX" id="vnJ-4T-HXu"/>
+                            <constraint firstItem="cgQ-vw-q2V" firstAttribute="top" secondItem="6Ff-Vn-OdJ" secondAttribute="bottom" constant="81.5" id="zRb-HI-wrB"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="playPauseButton" destination="mFc-5M-Cyg" id="qnq-fl-lIq"/>
-                        <outlet property="volumeController" destination="ISS-Vg-YNp" id="zVA-Xo-ECw"/>
+                        <outlet property="volumeController" destination="6gw-sC-jPR" id="mKU-SU-8di"/>
                         <outlet property="volumeImage" destination="ba7-S3-ikZ" id="lec-GD-eqP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bP3-Eo-3Oy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4404" y="67"/>
+            <point key="canvasLocation" x="3857" y="64"/>
         </scene>
     </scenes>
     <resources>
@@ -649,7 +648,7 @@
         <image name="Selected Play" width="170" height="170"/>
         <image name="Selected Stop" width="170" height="170"/>
         <image name="Stop" width="170" height="170"/>
-        <image name="Volume 2" width="170" height="170"/>
+        <image name="Volume 3" width="170" height="170"/>
         <image name="clear" width="1" height="1"/>
         <image name="firePony.gif" width="112" height="134"/>
         <image name="marioGiradorPixel.gif" width="320" height="320"/>

@@ -1,37 +1,32 @@
 //
-//  RootPageViewController.swift
+//  SurpriseGifPageViewController.swift
 //  AppAsset
 //
-//  Created by Jose Fabio_ on 26/06/17.
+//  Created by Jose Fabio_ on 28/06/17.
 //  Copyright © 2017 com.yoyomero.josefabio. All rights reserved.
 //
 
 import UIKit
 
-class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+class SurpriseGifPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
-    lazy var viewControllerList:[UIViewController] = {
+    lazy var viewControllerList: [UIViewController] = {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
-        let VCrs: [UIViewController] = [
-            sb.instantiateViewController(withIdentifier: "Swipe"),
-            sb.instantiateViewController(withIdentifier: "PonyNavigationController"),
-            sb.instantiateViewController(withIdentifier: "MarioNavigationController")
-        ]
-
-        return VCrs
+        let vc1 = sb.instantiateViewController(withIdentifier: "ArrowToGifVC")
+        let vc2 = sb.instantiateViewController(withIdentifier: "SurpriceGifVC")
         
+        return [vc1, vc2]
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.dataSource = self
         
-        
         if let firstViewController: UIViewController = viewControllerList.first {
-            self.setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+            self.setViewControllers([firstViewController], direction: .reverse, animated: true, completion: nil)
         }
-        
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -40,9 +35,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let nextIndex = vcIndex + 1
         
-        guard nextIndex != viewControllerList.count else {return viewControllerList[0]}
-        
-        guard nextIndex < viewControllerList.count else {return viewControllerList[0]}
+        guard viewControllerList.count > nextIndex else {return nil}
         
         return viewControllerList[nextIndex]
     }
@@ -53,12 +46,11 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let previousIndex = vcIndex - 1
         
-        guard previousIndex >= 0 else {return viewControllerList[viewControllerList.count - 1]}
+        guard previousIndex >= 0 else {return nil}
         
-        guard viewControllerList.count > previousIndex else {return viewControllerList[viewControllerList.count - 1]}
+        guard previousIndex < viewControllerList.count else {return nil}
         
         return viewControllerList[previousIndex]
     }
-
 
 }

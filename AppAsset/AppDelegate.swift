@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        exit(0) //Esto la resetea cada vez que abres la app.
+//        exit(0) //Esto la resetea cada vez que abres la app.
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

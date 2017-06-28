@@ -14,8 +14,8 @@ class moreTabPageViewController: UIPageViewController, UIPageViewControllerDeleg
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
         let VCrs: [UIViewController] = [
-            sb.instantiateViewController(withIdentifier: "ArrowToGifVC"),
-            sb.instantiateViewController(withIdentifier: "musicPageViewController")]
+            sb.instantiateViewController(withIdentifier: "MusicPVC"),
+            sb.instantiateViewController(withIdentifier: "SurpriseGifPVC")]
         
         return VCrs
     }()
@@ -33,26 +33,26 @@ class moreTabPageViewController: UIPageViewController, UIPageViewControllerDeleg
         
         guard let vcIndex = viewControllerList.index(of: viewController) else {return nil}
         
-        let nextIndex = vcIndex + 1
+        let previousIndex = vcIndex - 1
         
-        guard nextIndex != viewControllerList.count else {return viewControllerList[0]}
+        guard previousIndex >= 0 else {return nil}
         
-        guard nextIndex < viewControllerList.count else {return viewControllerList[0]}
+        guard viewControllerList.count > previousIndex else {return nil}
         
-        return viewControllerList[nextIndex]
+        return viewControllerList[previousIndex]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         guard let vcIndex = viewControllerList.index(of: viewController) else {return nil}
         
-        let previousIndex = vcIndex - 1
+        let nextIndex = vcIndex + 1
         
-        guard previousIndex >= 0 else {return viewControllerList[viewControllerList.count - 1]}
+        guard nextIndex != viewControllerList.count else {return nil}
         
-        guard viewControllerList.count > previousIndex else {return viewControllerList[viewControllerList.count - 1]}
+        guard nextIndex < viewControllerList.count else {return nil}
         
-        return viewControllerList[previousIndex]
+        return viewControllerList[nextIndex]
     }
 
 
