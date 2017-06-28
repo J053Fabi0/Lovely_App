@@ -15,8 +15,8 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         let VCrs: [UIViewController] = [
             sb.instantiateViewController(withIdentifier: "Swipe"),
-            sb.instantiateViewController(withIdentifier: "MarioNavigationController"),
-            sb.instantiateViewController(withIdentifier: "PonyNavigationController")
+            sb.instantiateViewController(withIdentifier: "PonyNavigationController"),
+            sb.instantiateViewController(withIdentifier: "MarioNavigationController")
         ]
 
         return VCrs
@@ -38,19 +38,6 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         guard let vcIndex = viewControllerList.index(of: viewController) else {return nil}
         
-        let previousIndex = vcIndex - 1
-        
-        guard previousIndex >= 0 else {return viewControllerList[viewControllerList.count - 1]}
-        
-        guard viewControllerList.count > previousIndex else {return viewControllerList[viewControllerList.count - 1]}
-        
-        return viewControllerList[previousIndex]
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        
-        guard let vcIndex = viewControllerList.index(of: viewController) else {return nil}
-        
         let nextIndex = vcIndex + 1
         
         guard nextIndex != viewControllerList.count else {return viewControllerList[0]}
@@ -58,6 +45,19 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         guard nextIndex < viewControllerList.count else {return viewControllerList[0]}
         
         return viewControllerList[nextIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
+        guard let vcIndex = viewControllerList.index(of: viewController) else {return nil}
+        
+        let previousIndex = vcIndex - 1
+        
+        guard previousIndex >= 0 else {return viewControllerList[viewControllerList.count - 1]}
+        
+        guard viewControllerList.count > previousIndex else {return viewControllerList[viewControllerList.count - 1]}
+        
+        return viewControllerList[previousIndex]
     }
 
 
