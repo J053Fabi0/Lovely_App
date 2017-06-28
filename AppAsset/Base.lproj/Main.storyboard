@@ -70,17 +70,27 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="1Hm-gR-BLZ" kind="relationship" relationship="rootViewController" id="hAc-BZ-VGZ"/>
+                        <segue destination="mBs-Yp-6Uw" kind="relationship" relationship="rootViewController" id="0Ac-Fi-KfX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHE-03-RAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1594" y="-306"/>
         </scene>
+        <!--More Tab Page View Controller-->
+        <scene sceneID="rim-Sa-efN">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="mBs-Yp-6Uw" customClass="moreTabPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7N9-Al-jDg"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7d-oe-Hby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518" y="-306"/>
+        </scene>
         <!--Color Rojo-->
         <scene sceneID="P12-Gf-VGd">
             <objects>
-                <viewController id="1Hm-gR-BLZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArrowToGifVC" id="1Hm-gR-BLZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bdV-V3-tCj"/>
                         <viewControllerLayoutGuide type="bottom" id="ZON-RE-OFJ"/>
@@ -99,19 +109,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsG-TZ-nSH">
-                                <rect key="frame" x="290" y="489" width="30" height="30"/>
-                                <state key="normal" title="🎵"/>
-                                <connections>
-                                    <segue destination="Vky-PI-xfr" kind="show" id="n7I-6f-Xyi"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.44043064724081632" green="0.5" blue="0.88471526675170065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ZON-RE-OFJ" firstAttribute="top" secondItem="DsG-TZ-nSH" secondAttribute="bottom" id="7bH-HL-VQc"/>
-                            <constraint firstAttribute="trailing" secondItem="DsG-TZ-nSH" secondAttribute="trailing" id="Du3-kH-imu"/>
                             <constraint firstItem="BB5-Ht-wLq" firstAttribute="centerX" secondItem="3mj-OX-OW0" secondAttribute="centerX" id="RAW-uH-v51"/>
                             <constraint firstItem="BB5-Ht-wLq" firstAttribute="centerY" secondItem="3mj-OX-OW0" secondAttribute="centerY" id="cah-di-bMX"/>
                         </constraints>
@@ -129,7 +130,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2409" y="-306"/>
+            <point key="canvasLocation" x="3561" y="-685"/>
         </scene>
         <!--Mario Navigation Controller-->
         <scene sceneID="WG6-Y8-Ja0">
@@ -178,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3J-Sg-AJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3356" y="-673"/>
+            <point key="canvasLocation" x="4406" y="-685"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="Jcx-z4-ihP">
@@ -202,12 +203,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.85160446166992188" green="0.82804447412490845" blue="0.79026353359222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desliza el dedo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReQ-6K-ERz">
-                                <rect key="frame" x="76" y="47" width="168" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.85160446170000004" green="0.82804447410000004" blue="0.79026353360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -215,8 +210,6 @@
                             <constraint firstItem="Puc-cY-dGY" firstAttribute="centerX" secondItem="vip-iq-xIo" secondAttribute="centerX" id="G5y-WQ-xWN"/>
                             <constraint firstItem="Puc-cY-dGY" firstAttribute="top" secondItem="TOW-HR-da4" secondAttribute="bottom" constant="20" id="JEz-2c-bp4"/>
                             <constraint firstItem="vhB-uu-TiZ" firstAttribute="centerY" secondItem="vip-iq-xIo" secondAttribute="centerY" id="LR6-WV-5ME"/>
-                            <constraint firstItem="ReQ-6K-ERz" firstAttribute="top" secondItem="TOW-HR-da4" secondAttribute="bottom" constant="47" id="RAY-Fj-VYH"/>
-                            <constraint firstItem="ReQ-6K-ERz" firstAttribute="centerX" secondItem="vip-iq-xIo" secondAttribute="centerX" id="Szc-cL-i8J"/>
                             <constraint firstItem="vhB-uu-TiZ" firstAttribute="width" secondItem="vip-iq-xIo" secondAttribute="width" id="enq-1s-NDu"/>
                             <constraint firstItem="vhB-uu-TiZ" firstAttribute="centerX" secondItem="vip-iq-xIo" secondAttribute="centerX" id="pmv-ap-fhd"/>
                         </constraints>
@@ -547,10 +540,20 @@
             </objects>
             <point key="canvasLocation" x="8" y="427"/>
         </scene>
+        <!--Music Page View Controller-->
+        <scene sceneID="lrp-lp-E0J">
+            <objects>
+                <pageViewController storyboardIdentifier="musicPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="RGV-ZL-0wA" customClass="MusicPageViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaX-Oz-F9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3561" y="67"/>
+        </scene>
         <!--Ballad of the Pegasus-->
         <scene sceneID="joW-Tt-iFD">
             <objects>
-                <viewController title="Ballad of the Pegasus" id="Vky-PI-xfr" customClass="MusicViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BalladPegasusVC" title="Ballad of the Pegasus" id="Vky-PI-xfr" customClass="MusicViewController" customModule="AppAsset" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IBS-Xf-NSD"/>
                         <viewControllerLayoutGuide type="bottom" id="KfA-iN-a3f"/>
@@ -560,13 +563,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ballad of the Pegasus Cover" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-OB-Y8E">
-                                <rect key="frame" x="40" y="44" width="240" height="227"/>
+                                <rect key="frame" x="40" y="0.0" width="240" height="227"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oEb-OB-Y8E" secondAttribute="height" multiplier="240:227" id="y3c-pG-3gA"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFc-5M-Cyg">
-                                <rect key="frame" x="133" y="275" width="55" height="54.5"/>
+                                <rect key="frame" x="133" y="231" width="55" height="54.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mFc-5M-Cyg" secondAttribute="height" multiplier="1:1" id="loA-h8-q5v"/>
                                 </constraints>
@@ -578,7 +581,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-Vn-OdJ">
-                                <rect key="frame" x="224.5" y="275" width="55.5" height="54.5"/>
+                                <rect key="frame" x="224.5" y="231" width="55.5" height="54.5"/>
                                 <state key="normal" image="Stop"/>
                                 <state key="selected" image="Selected Stop"/>
                                 <state key="highlighted" image="Selected Stop"/>
@@ -587,13 +590,13 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ISS-Vg-YNp">
-                                <rect key="frame" x="84" y="412.5" width="198" height="31"/>
+                                <rect key="frame" x="84" y="368.5" width="198" height="31"/>
                                 <connections>
                                     <action selector="changeVolumen" destination="Vky-PI-xfr" eventType="valueChanged" id="BgC-SY-bHb"/>
                                 </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Volume 2" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-S3-ikZ">
-                                <rect key="frame" x="52" y="412.5" width="30" height="30"/>
+                                <rect key="frame" x="52" y="368.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dE0-2z-yBE"/>
                                     <constraint firstAttribute="width" constant="30" id="oOA-wl-FS6"/>
@@ -620,6 +623,7 @@
                             <constraint firstItem="ISS-Vg-YNp" firstAttribute="centerY" secondItem="ba7-S3-ikZ" secondAttribute="centerY" id="y5c-NK-tXJ"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="playPauseButton" destination="mFc-5M-Cyg" id="qnq-fl-lIq"/>
                         <outlet property="volumeController" destination="ISS-Vg-YNp" id="zVA-Xo-ECw"/>
@@ -628,7 +632,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bP3-Eo-3Oy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3356" y="60"/>
+            <point key="canvasLocation" x="4404" y="67"/>
         </scene>
     </scenes>
     <resources>

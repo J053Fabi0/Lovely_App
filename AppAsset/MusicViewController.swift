@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 
 class MusicViewController: UIViewController {
 
@@ -67,7 +68,11 @@ class MusicViewController: UIViewController {
     @IBAction func changeVolumen() {
         let currentVolume = volumeController.value
         
-        audioPlayer.volume = currentVolume
+        let volumeView = MPVolumeView()
+        if let view = volumeView.subviews.first as? UISlider{
+            view.value = currentVolume //---0 to 1.0---
+            
+        }
         
         if currentVolume == 0 {
             volumeImage.image = #imageLiteral(resourceName: "Volume 0")

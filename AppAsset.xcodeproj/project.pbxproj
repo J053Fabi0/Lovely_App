@@ -19,6 +19,8 @@
 		F0612E8A1EFE1C8200AC5B9C /* PonyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0612E891EFE1C8200AC5B9C /* PonyPageViewController.swift */; };
 		F0712AA71F0090F00080E6F1 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0712AA61F0090F00080E6F1 /* GifView.swift */; };
 		F0712AA91F0091320080E6F1 /* ohh.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0712AA81F0091320080E6F1 /* ohh.gif */; };
+		F07432BC1F0360730092E0CC /* moreTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07432BB1F0360730092E0CC /* moreTabPageViewController.swift */; };
+		F07432C01F03EED80092E0CC /* MusicPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07432BF1F03EED80092E0CC /* MusicPageViewController.swift */; };
 		F0B4D37F1F01F5B000C7250A /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D37E1F01F5B000C7250A /* RootPageViewController.swift */; };
 		F0B4D3841F01F9F000C7250A /* PonyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */; };
 		F0B4D3871F02054900C7250A /* firePony.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0B4D3861F02054900C7250A /* firePony.gif */; };
@@ -49,6 +51,8 @@
 		F0612E891EFE1C8200AC5B9C /* PonyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonyPageViewController.swift; sourceTree = "<group>"; };
 		F0712AA61F0090F00080E6F1 /* GifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
 		F0712AA81F0091320080E6F1 /* ohh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ohh.gif; sourceTree = "<group>"; };
+		F07432BB1F0360730092E0CC /* moreTabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreTabPageViewController.swift; sourceTree = "<group>"; };
+		F07432BF1F03EED80092E0CC /* MusicPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPageViewController.swift; sourceTree = "<group>"; };
 		F0B4D37E1F01F5B000C7250A /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootPageViewController.swift; path = ../RootPageViewController.swift; sourceTree = "<group>"; };
 		F0B4D3831F01F9F000C7250A /* PonyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PonyNavigationController.swift; path = ../PonyNavigationController.swift; sourceTree = "<group>"; };
 		F0B4D3861F02054900C7250A /* firePony.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = firePony.gif; sourceTree = "<group>"; };
@@ -117,6 +121,24 @@
 			name = Extras;
 			sourceTree = "<group>";
 		};
+		F07432BD1F036B070092E0CC /* MoreTabPVC Childs */ = {
+			isa = PBXGroup;
+			children = (
+				F035EDEE1F0032A700FD2B5A /* SurpriseGifViewController.swift */,
+				F07432BF1F03EED80092E0CC /* MusicPageViewController.swift */,
+				F07432BE1F03EE5D0092E0CC /* MusicPVC */,
+			);
+			name = "MoreTabPVC Childs";
+			sourceTree = "<group>";
+		};
+		F07432BE1F03EE5D0092E0CC /* MusicPVC */ = {
+			isa = PBXGroup;
+			children = (
+				F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */,
+			);
+			name = MusicPVC;
+			sourceTree = "<group>";
+		};
 		F0B4D37D1F01E2B300C7250A /* Gif */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +165,8 @@
 		F0B4D3821F01F62600C7250A /* NavigationController Childs */ = {
 			isa = PBXGroup;
 			children = (
-				F035EDEE1F0032A700FD2B5A /* SurpriseGifViewController.swift */,
-				F0D6D15A1F02DAFD00DE2032 /* MusicViewController.swift */,
+				F07432BB1F0360730092E0CC /* moreTabPageViewController.swift */,
+				F07432BD1F036B070092E0CC /* MoreTabPVC Childs */,
 			);
 			name = "NavigationController Childs";
 			sourceTree = "<group>";
@@ -284,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07432BC1F0360730092E0CC /* moreTabPageViewController.swift in Sources */,
 				F04B382B1F00A98000161A2E /* NavigationViewController.swift in Sources */,
 				F035EDF61F0039D200FD2B5A /* FrostyTabBar.swift in Sources */,
 				F035EDEF1F0032A700FD2B5A /* SurpriseGifViewController.swift in Sources */,
@@ -291,6 +314,7 @@
 				F0B4D3841F01F9F000C7250A /* PonyNavigationController.swift in Sources */,
 				F0612E8A1EFE1C8200AC5B9C /* PonyPageViewController.swift in Sources */,
 				F0D6D15B1F02DAFD00DE2032 /* MusicViewController.swift in Sources */,
+				F07432C01F03EED80092E0CC /* MusicPageViewController.swift in Sources */,
 				F035EDED1F00328600FD2B5A /* TabBarViewController.swift in Sources */,
 				F0712AA71F0090F00080E6F1 /* GifView.swift in Sources */,
 				F0B4D39B1F0294FA00C7250A /* MarioPageViewController.swift in Sources */,
